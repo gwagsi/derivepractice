@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>FEYINS BOT</title>
+  
+  <style>
+    
+
+ 
+  </style>
+</head>
+<body>
+  <h1>Feyins Bot Site</h1>
+  <div class="navbar">
+    <button id="loginBtn" onclick="window.open('https://oauth.deriv.com/oauth2/authorize?app_id=53312')">Login</button>
+    
+     <div class="balance"> Balance :
+        
+      <span id="balance_update"></span>
+      <span id="balance_currency"></span>
+     </div>
+  </div>
+  <div class="proposal-region">
+    <button id="proposal">Subscribe proposal</button>
+    <button id="proposal-unsubscribe">Unsubscribe proposal</button>
+    <button id="authorize">Authoize</button>
+  </div>
+  <div id="proposal-update">
+     
+  </div>
+  <div class="chart">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script type="module" src="./core.js"></script>
+  <script type="module" src="./chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+  <script type="module" src="./login/login.js"></script>
+</body>
+</html>
