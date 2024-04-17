@@ -1,7 +1,7 @@
 import DerivAPIBasic from "https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic";
 import { onNewTick } from "./chart.js"; // Assuming file1.js is the path
 
-const app_id = 53312; // Replace with your app_id or leave as 1089 for testing.
+const app_id = 53485; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(
   `wss://ws.derivws.com/websockets/v3?app_id=${app_id}`
 );
@@ -79,40 +79,40 @@ const proposalResponse = async (res) => {
 
       if (count % 2 === 0 &&  hasOpenContract.value===false) {
         tmporalCount.value++;
-        console.log("increaind count")
-        if (tmporalCount.value >= 5) {
-          console.log("increased count")
+        //console.log("increaind count")
+        if (tmporalCount.value >=2) {
+        //  console.log("increased count")
           tmporalCount.value = 0;
-        console.log(" opencontracts",  hasOpenContract.value);
+      //  console.log(" opencontracts",  hasOpenContract.value);
         let buyPrice = Math.pow(1.01, times.times).toFixed(2);
         const proposalData = await api.proposal(proposal_request);
         const proposalId = proposalData.proposal.id;
-        // console.log("here is the propose ", proposalId);
-        //console.log("here is the  after buy price %s", buyPrice);
+       // console.log("here is the propose ", proposalId);
+      // console.log("here is the  after buy price %s", buyPrice);
         const buyObject = {
-          buy: proposalId,
-          price: buyPrice,
+         buy: proposalId,
+          price: buyPrice ,
         };
         //const buyData =await api.buy(buyObject);
         try {
           await api.buy(buyObject);
           times.times++;
-          // if (times.times >= 50) {
-          //   times.times = 0;
-          // }
+          if (times.times >= 50) {
+             times.times = 0;
+            }
         } catch (e) {
           console.log(e);
         }
         console.log("Buying contract at count", count, "for price", buyPrice);
         hasOpenContract.value = true;
-        console.log("has open contract", hasOpenContract.value);
+       // console.log("has open contract", hasOpenContract.value);
       }
       }
 
      // Sell (close) the contract on the next even count if open
       if (count % 2 === 0 && hasOpenContract.value===true) {
-        console.log("has open contract", hasOpenContract.value);
         tmporalCount.value++;
+  
         if (tmporalCount.value >= 2) {
           tmporalCount.value = 0;
           console.log("Selling contract at count", count);
@@ -123,7 +123,7 @@ const proposalResponse = async (res) => {
           });
           const portContractId =
             portfolioData.portfolio.contracts[0].contract_id;
-          console.log("Purchased", portContractId);
+         // console.log("Purchased", portContractId);
           api.sell({
             sell: portContractId,
             price: 0,
@@ -166,7 +166,7 @@ const unsubscribeProposal = () => {
 
 const authorizeApp = async () => {
   console.log("here to authorise");
-  await api.authorize(user_accounts[4].token);
+  await api.authorize(user_accounts[0].token);
   console.log("authorised app");
 };
 
@@ -182,12 +182,12 @@ authorize_app.addEventListener("click", authorizeApp);
 const user_accounts = [
   {
     account: "CR2120738",
-    token: "a1-sxQq3Sg43llrMkwsnJQh9lxJ678n8",
+    token: "a1-0ab2XxopF9xHw1wrz3ZlaPzsCRwAH",
     currency: "USD",
   },
   {
     account: "CR2140975",
-    token: "a1-FUTZ1RFybREFxpR4pvk1kQAEk077R",
+    token: "a1-vDiAR8QtnPuuOQGvLAAMMzqGwbeO1",
     currency: "btc",
   },
   {
@@ -202,7 +202,7 @@ const user_accounts = [
   },
   {
     account: "VRTC3545234",
-    token: "a1-nM4CfZ2aHxbEi5nvGPjgsDe6XLoJT",
+    token: "a1-nagfGAF8F1SdlhdFuIZQNmhtwvn25",
     currency: "USD",
   },
 ];
