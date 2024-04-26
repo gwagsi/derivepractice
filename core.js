@@ -13,6 +13,7 @@ var previousQuote = null;
 const times = { times: 0 };
 let hasOpenContract = { value: false };
 let tmporalCount = { value: 0 };
+let ongoing = { value: null };
 
 const vix10spreviousQuote = { quote: null };
 
@@ -26,6 +27,16 @@ const vix100scurrentQuote = { quote: null };
 const vix100spreviousQuote = { quote: null };
 const vix25scurrentQuote = { quote: null };
 const vix25spreviousQuote = { quote: null };
+const vix25currentQuote = { quote: null };
+const vix25previousQuote = { quote: null };
+const vix50scurrentQuote = { quote: null };
+const vix50spreviousQuote = { quote: null };
+const vix50currentQuote = { quote: null };
+const vix50previousQuote = { quote: null };
+const vix75scurrentQuote = { quote: null };
+const vix75spreviousQuote = { quote: null };
+const vix75currentQuote = { quote: null };
+const vix75previousQuote = { quote: null };
 
 // list of all dom elements
 
@@ -82,165 +93,79 @@ const proposalResponse = async (res) => {
       balance_currency.innerHTML = data.balance.currency;
       break;
     case "tick":
-      if (data.echo_req.ticks === "1HZ10V") {
-        vix10scurrentQuote.quote = data.tick.quote;
-        console.log("Vix10s current quote: %s", vix10scurrentQuote.quote);
-        // saveTickDataToCsv(data.tick);
+      const tickquote = data.echo_req.ticks;
+      const tick = data.tick.quote;
 
-        if (vix10spreviousQuote.quote !== null) {
-          // Skip the check for the first tick as there's no previous quote
-          const difference =
-            vix10scurrentQuote.quote - vix10spreviousQuote.quote;
-          console.log("Difference: %s", difference);
-          if (hasOpenContract.value === true) {
-            sellContract();
-          }
-
-          if (hasOpenContract.value === false) {
-            if (difference >= 0.423) {
-              console.log("The quote has gone up by 0.897 or more");
-              console.log("buying vix10s");
-              buyContract("1HZ10V");
-            } else if (difference <= -0.423) {
-              console.log("The quote has gone down by 0.897 or more");
-              console.log("buying vix10s");
-              buyContract("1HZ10V");
-            }
-          }
-        }
-
-        // Update the previous quote for the next tick
-        vix10spreviousQuote.quote = vix10scurrentQuote.quote;
-      }
-
-      if (data.echo_req.ticks === "R_100") {
-        vix100currentQuote.quote = data.tick.quote;
-        console.log("Vix100 current quote: %s", vix100currentQuote.quote);
-        // saveTickDataToCsv(data.tick);
-        if (vix100previousQuote.quote !== null) {
-          // Skip the check for the first tick as there's no previous quote
-          const difference =
-            vix100currentQuote.quote - vix100previousQuote.quote;
-          console.log("Difference: %s", difference);
-          if (hasOpenContract.value === true) {
-            sellContract();
-          }
-
-          if (hasOpenContract.value === false) {
-            if (difference >= 0.998 || difference==0) {
-              console.log("The quote has gone up by 0.897 or more");
-              console.log("buying vix100");
-              buyContract("R_100");
-            } else if (difference <= -0.998) {
-              console.log("The quote has gone down by 0.897 or more");
-              console.log("buying vix100");
-              buyContract("R_100");
-            }
-          }
-        }
-
-        // Update the previous quote for the next tick
-        vix100previousQuote.quote = vix100currentQuote.quote;
-      }
-
-      if (data.echo_req.ticks === "1HZ100V") {
-        vix100scurrentQuote.quote = data.tick.quote;
-        console.log("Vix100s current quote: %s", vix100scurrentQuote.quote);
-        // saveTickDataToCsv(data.tick);
-        if (vix100spreviousQuote.quote !== null) {
-          // Skip the check for the first tick as there's no previous quote
-          const difference =
-            vix100scurrentQuote.quote - vix100spreviousQuote.quote;
-          console.log("Difference: %s", difference);
-          if (hasOpenContract.value === true) {
-            sellContract();
-          }
-
-          if (hasOpenContract.value === false) {
-            if (difference >= 0.424 || difference==0) {
-              console.log("The quote has gone up by 0.897 or more");
-              console.log("buying vix100s");
-              buyContract("1HZ100V");
-            } else if (difference <= -0.424) {
-              console.log("The quote has gone down by 0.897 or more");
-              console.log("buying vix100s");
-              buyContract("1HZ100V");
-            }
-          }
-        }
-
-        // Update the previous quote for the next tick
-        vix100spreviousQuote.quote = vix100scurrentQuote.quote;
-      }
-
-
-      if (data.echo_req.ticks === "R_10") {
-        vix10currentQuote.quote = data.tick.quote;
-        console.log("Vix10  current quote: %s", vix10currentQuote.quote);
-        // saveTickDataToCsv(data.tick);
-
-        if (vix10previousQuote.quote !== null) {
-          // Skip the check for the first tick as there's no previous quote
-          const difference =
-           ( vix10currentQuote.quote - vix10previousQuote.quote);
-          console.log("Difference: %s", difference);
-          if (hasOpenContract.value === true) {
-            sellContract();
-          }
-
-          if (hasOpenContract.value === false) {
-              console.log("The quote has gone up by 0.897 or more");
-            if (difference >= 0.0825  || difference==0 ) {
-              console.log("The quote has gone up by 0.897 or more");
-              console.log("buying vix10 ");
-              buyContract("R_10");
-            } else if (difference <= -0.0825) {
-              console.log("The quote has gone down by 0.897 or more");
-              console.log("buying vix10 ");
-              buyContract("R_10");
-            }
-          }
-        }
-
-        // Update the previous quote for the next tick
-        vix10previousQuote.quote = vix10currentQuote.quote;
-      }
-
-
-      if (data.echo_req.ticks === "1HZ25V") {
-        vix25scurrentQuote.quote = data.tick.quote;
-        console.log("Vix25s current quote: %s", vix25scurrentQuote.quote);
-        // saveTickDataToCsv(data.tick);
-        if (vix100spreviousQuote.quote !== null) {
-          // Skip the check for the first tick as there's no previous quote
-          const difference =
-            vix25scurrentQuote.quote - vix25spreviousQuote.quote;
-          console.log("Difference: %s", difference);
-          if (hasOpenContract.value === true) {
-            sellContract();
-          }
-
-          if (hasOpenContract.value === false) {
-            if (difference >= 0.024 || difference==0) {
-              console.log("The quote has gone up by 0.897 or more");
-              console.log("buying vix100s");
-              buyContract("1HZ25V");
-            } else if (difference <= -0.024) {
-              console.log("The quote has gone down by 0.897 or more");
-              console.log("buying vix100s");
-              buyContract("1HZ25V");
-            }
-          }
-        }
-
-        // Update the previous quote for the next tick
-        vix25spreviousQuote.quote = vix25scurrentQuote.quote;
-      }
-      quotesFunction("1HZ10V",vix10scurrentQuote,vix10spreviousQuote);
-      quotesFunction("R_100",vix100currentQuote,vix100previousQuote);
-      quotesFunction("1HZ100V",vix100scurrentQuote,vix100spreviousQuote);
-      quotesFunction("R_10",vix10currentQuote,vix10previousQuote);
-      quotesFunction("1HZ25V",vix25scurrentQuote,vix25spreviousQuote);
+      quotesFunction(
+        "1HZ10V",
+        vix10scurrentQuote,
+        vix10spreviousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "R_100",
+        vix100currentQuote,
+        vix100previousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "1HZ100V",
+        vix100scurrentQuote,
+        vix100spreviousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "R_10",
+        vix10currentQuote,
+        vix10previousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "1HZ25V",
+        vix25scurrentQuote,
+        vix25spreviousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "R_25",
+        vix25currentQuote,
+        vix25previousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "1HZ50V",
+        vix50scurrentQuote,
+        vix50spreviousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "R_50",
+        vix50currentQuote,
+        vix50previousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "1HZ75V",
+        vix75scurrentQuote,
+        vix75spreviousQuote,
+        tick,
+        tickquote
+      );
+      quotesFunction(
+        "R_75",
+        vix75currentQuote,
+        vix75previousQuote,
+        tick,
+        tickquote
+      );
 
       // //   // Track contract status and price for informed decisions
 
@@ -287,6 +212,36 @@ const getProposal = async () => {
     ticks: "1HZ100V",
     subscribe: 1,
   });
+
+  await api.ticks({
+    ticks: "1HZ25V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "1HZ50V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "1HZ75V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_10",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_25",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_50",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_75",
+    subscribe: 1,
+  });
+
   //console.log(balance)
   //await api.subscribe({ ticks: 'R_100' });
 };
@@ -298,7 +253,7 @@ const unsubscribeProposal = () => {
 
 const authorizeApp = async () => {
   console.log("here to authorise");
-  await api.authorize(user_accounts[4].token);
+  await api.authorize(user_accounts[0].token);
   console.log("authorised app");
 };
 
@@ -342,6 +297,7 @@ const user_accounts = [
 // Buy a contract on even count, tracking buy price
 const buyContract = async (symbolValue) => {
   if (hasOpenContract.value === false) {
+    console.log("here is the times", times.times);
     let buyPrice = parseFloat(Math.pow(1.01, times.times).toFixed(2));
 
     const newPropsal = {
@@ -366,6 +322,7 @@ const buyContract = async (symbolValue) => {
         times.times = 0;
       }
       hasOpenContract.value = true;
+      ongoing.value = symbolValue;
       tmporalCount.value = 0;
     } catch (e) {
       console.log(e);
@@ -392,52 +349,71 @@ const sellContract = async () => {
     });
     console.log("Portfolio", portfolioData);
     try {
-      const portContractId = portfolioData.portfolio.contracts[0].contract_id;
-      // console.log("Purchased", portContractId);
+      const contracts = portfolioData.portfolio.contracts;
+      const length = contracts.length;
+      const contractIds = contracts.map((contract) => contract.contract_id);
 
-      const saleContrac = await api.sell({
-        sell: portContractId,
-        price: 0,
-      });
-      console.log("here is the sale contract", saleContrac);
+      console.log("Length:", length);
+      console.log("Contract IDs:", contractIds);
+
+      for (const contractId of contractIds) {
+        const saleContract = await api.sell({
+          sell: contractId,
+          price: 0,
+        });
+
+        console.log("Sold contract:", saleContract);
+      }
+
       hasOpenContract.value = false;
+      ongoing.value = null;
       tmporalCount.value = 0;
     } catch (e) {
-      console.log("could not sell contract , error %s", e);
-      hasOpenContract.value = false;
+      console.log(e);
+
       tmporalCount.value = 0;
     }
   }
 };
 
-const quotesFunction = async (quote,currentquote,previosequote) => {
-  if (data.echo_req.ticks === quote) {
-    currentquote.quote = data.tick.quote;
-    
+const quotesFunction = async (
+  quote,
+  currentquote,
+  previosequote,
+  tick,
+  tickquote
+) => {
+  if (tickquote === quote) {
+    currentquote.quote = tick;
+
     // saveTickDataToCsv(data.tick);
     if (previosequote.quote !== null) {
       // Skip the check for the first tick as there's no previous quote
-      const difference =
-      currentquote.quote - previosequote.quote;
-      console.log("Difference: %s", difference);
-      if (hasOpenContract.value === true) {
+      const difference = currentquote.quote - previosequote.quote;
+      console.log(difference);
+      if (hasOpenContract.value == true && ongoing.value == quote) {
         sellContract();
       }
 
       if (hasOpenContract.value === false) {
-        if (difference >= 0.024 || difference==0) {
+        if (difference <= 0.024 && difference >= -0.024) {
           console.log("The quote has gone up by 0.897 or more");
-          console.log("buying vix100s");
-          buyContract("1HZ25V");
-        } else if (difference <= -0.024) {
-          console.log("The quote has gone down by 0.897 or more");
-          console.log("buying vix100s");
-          buyContract("1HZ25V");
+          console.log("buying   %s", quote);
+          if (hasOpenContract.value == false) {
+            buyContract(quote);
+          }
         }
+        //  else if (difference  >= -0.024) {
+        //   console.log("The quote has gone down by 0.897 or more");
+        //   console.log("buying  %s",quote);
+        //   buyContract(quote);
+        // }
+      } else {
+        console.log("no contract to buy");
       }
     }
 
     // Update the previous quote for the next tick
     previosequote.quote = currentquote.quote;
   }
-}
+};
