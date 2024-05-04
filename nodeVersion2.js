@@ -19,28 +19,27 @@ const times = { times: 0 };
 let hasOpenContract = { value: false };
 let tmporalCount = { value: 0 };
 const contractId = { value: null };
-const buyCount = { value: 20 };
-const hasbuyCount = { value: 20 };
-const vix10BuyCount = { value: 20 };
-const vix10HasbuyCount = { value: 20 };
-const vix25BuyCount = { value: 20 };
-const vix25HasbuyCount = { value: 20 };
-const vix50BuyCount = { value: 20 };
-const vix50HasbuyCount = { value: 20 };
-const vix75BuyCount = { value: 20 };
-const vix75HasbuyCount = { value: 20 };
-const vix100BuyCount = { value: 20 };
+
+const vix10BuyCount = { value: 0 };
+const vix10HasbuyCount = { value: 0 };
+const vix25BuyCount = { value: 0 };
+const vix25HasbuyCount = { value: 0 };
+const vix50BuyCount = { value: 0 };
+const vix50HasbuyCount = { value: 0 };
+const vix75BuyCount = { value: 0 };
+const vix75HasbuyCount = { value: 0 };
+const vix100BuyCount = { value: 0 };
 const vix100HasbuyCount = { value: 0 };
-const vix10sBuyCount = { value: 20 };
-const vix10sHasbuyCount = { value: 20 };
-const vix100sBuyCount = { value: 20 };
-const vix100sHasbuyCount = { value: 20 };
-let vix25sBuyCount = { value: 20 };
-let vix25sHasbuyCount = { value: 20 };
-let vix50sBuyCount = { value: 20 };
-let vix50sHasbuyCount = { value: 20 };
-let vix75sBuyCount = { value: 20 };
-let vix75sHasbuyCount = { value: 20 };
+const vix10sBuyCount = { value: 0 };
+const vix10sHasbuyCount = { value: 0 };
+const vix100sBuyCount = { value: 0 };
+const vix100sHasbuyCount = { value: 0 };
+let vix25sBuyCount = { value: 0 };
+let vix25sHasbuyCount = { value: 0 };
+let vix50sBuyCount = { value: 0 };
+let vix50sHasbuyCount = { value: 0 };
+let vix75sBuyCount = { value: 0 };
+let vix75sHasbuyCount = { value: 0 };
 
 let random = { value: 20 };
 let buyQuote = { value: null };
@@ -254,6 +253,7 @@ connection.on("message", async (message) => {
         console.log(" we lost a trade at,", data.transaction.symbol);
         console.log("starting back at 1");
         times.times = 0;
+       resetHasBuyCount();
       }
       if (data.transaction.amount >= 1) {
         console.log(" we won a trade at,", data.transaction.symbol);
@@ -262,7 +262,12 @@ connection.on("message", async (message) => {
       break;
 
     default:
-      //console.log("Unknown msg_type: %s", data.msg_type);
+       
+      if (data.msg_type === "history") {
+        console.log(" prices: %s", data.history.prices);
+        console.log("times: %s", data.history.times);
+      }
+
       break;
   }
 });
@@ -281,6 +286,16 @@ const getProposal = async () => {
   // await api.proposal(proposal_request);
   await api.balance(balance_request);
   // proposal.remove()
+
+  // api.ticksHistory({
+  //   ticks_history: "R_50",
+  //   adjust_start_time: 1,
+  //   count: 100000000,
+  //   end: "latest",
+  //   start: 10,
+  //   style: "ticks",
+  // });
+
   await api.transaction({
     transaction: 1,
     subscribe: 1,
@@ -403,6 +418,7 @@ const buyContract = async (symbolValue) => {
     times.times++;
     if (times.times >= 60) {
       times.times = 0;
+      resetHasBuyCount();
     }
     //hasOpenContract.value = true;
     // console.log("Bought contract at  ", buyPrice);
@@ -418,6 +434,19 @@ const buyContract = async (symbolValue) => {
   }
 };
 
+const resetHasBuyCount = () => {
+  vix10sHasbuyCount.value = 0;
+  vix100sHasbuyCount.value = 0;
+  vix25sHasbuyCount.value = 0;
+  vix50sHasbuyCount.value = 0;
+  vix75sHasbuyCount.value = 0;
+  vix10HasbuyCount.value = 0;
+  vix100HasbuyCount.value = 0;
+  vix25HasbuyCount.value = 0;
+  vix50HasbuyCount.value = 0;
+  vix75HasbuyCount.value = 0;
+}
+
 const quotesFunction = async (
   quote,
   currentquote,
@@ -429,17 +458,6 @@ const quotesFunction = async (
   hasbuyCount
 ) => {
   if (tickquote === quote) {
-    // if (
-    //   openContractQuote.quote == tickquote &&
-    //   hasOpenContract.value === true
-    // ) {
-    //   console.log(
-    //     "here is the open contract quote %s",
-    //     openContractQuote.quote
-    //   );
-    // //  sellContract();
-    //console.log("here is the open contract quote %s", openContractQuote.quote);
-    // buyContract(quote);
     currentquote.quote = tick;
 
     if (previosequote.quote !== null) {
@@ -447,51 +465,36 @@ const quotesFunction = async (
       const percentage_change =
         ((currentquote.quote - previosequote.quote) / previosequote.quote) *
         100;
-      //console.log("here is the difference %s", percentage_change);
+        previosequote.quote = currentquote.quote;
 
       const within_limit = Math.abs(percentage_change) <= point;
 
-      // if (percentage_change == 0) {
-      //   console.log("the diffrence is 0");
-
-      //   buyContract(quote);
-      // }
       if (within_limit) {
         buyCount.value += 1;
+        //console.log(buyCount.value);
         // console.log("Within Limits");
         // console.log("hasbuyCount", hasbuyCount.value);
         //console.log("tick count countbuy",buyCount.value);
       } else {
-        //console.log("not within limit");
-
-        if (buyCount.value <= 1) {
-          // console.log("buying   %s", quote);
-          // buyContract(quote);
-          hasbuyCount.value = 0;
-        } else if (hasbuyCount.value  >= 1 && hasbuyCount.value<=2) {
+   
+        //console.log("spike");
+       // console.log("hasbuyCount", hasbuyCount.value);
+        if (buyCount.value >= 20 && hasbuyCount.value <= 4) {
+         // console.log("count for %s is %s", quote, buyCount.value);
+          buyCount.value = 0;
           hasbuyCount.value += 1;
 
           buyContract(quote);
-
-          buyCount.value += 1;
         } else {
           buyCount.value = 0;
-          hasbuyCount.value += 1;
         }
-
-        // // console.log(
-        // //   "The current price is not within ±%s% from the previous price.",
-        // //   point
-        // // );
-        // // if (hasOpenContract.value == false) {
-        // //  // console.log("buying   %s", quote);
-        // //   buyContract(quote);
-        // // }
       }
+    } else {
+      previosequote.quote = currentquote.quote;
+      buyCount.value = 0;
     }
+    // Update the previous quote for the next tick
   }
-  // Update the previous quote for the next tick
-  previosequote.quote = currentquote.quote;
 };
 
 getProposal();
