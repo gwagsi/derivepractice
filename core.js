@@ -1,19 +1,49 @@
-import DerivAPIBasic from "https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic";
-
+ 
+import { DerivAPI } from "@deriv/deriv-api/dist/DerivAPI";
 // import { onNewTick } from "./chart.js";
 // import { saveTickDataToCsv } from "./save_tick_tofile.js";
 const app_id = 53485; // Replace with your app_id or leave as 1089 for testing.
 const connection = new WebSocket(
   `wss://ws.derivws.com/websockets/v3?app_id=${app_id}`
 );
-const api = new DerivAPIBasic({ connection });
+
+const basic        = new DerivAPI({ connection });
+const api = basic.basic;
+//const api = new DerivAPIBasic({ connection });
 console.log(api);
 var count = 0;
 var previousQuote = null;
 const times = { times: 0 };
 let hasOpenContract = { value: false };
 let tmporalCount = { value: 0 };
-let ongoing = { value: null };
+const contractId = { value: null };
+const buyCount = { value: 20 };
+const hasbuyCount = { value: 20 };
+const vix10BuyCount = { value: 20 };
+const vix10HasbuyCount = { value: 20 };
+const vix25BuyCount = { value: 20 };
+const vix25HasbuyCount = { value: 20 };
+const vix50BuyCount = { value: 20 };
+const vix50HasbuyCount = { value: 20 };
+const vix75BuyCount = { value: 20 };
+const vix75HasbuyCount = { value: 20 };
+const vix100BuyCount = { value: 20 };
+const vix100HasbuyCount = { value: 20 };
+const vix10sBuyCount = { value: 20 };
+const vix10sHasbuyCount = { value: 20 };
+const vix100sBuyCount = { value: 20 };
+const vix100sHasbuyCount = { value:  0 };
+let vix25sBuyCount = { value: 20 };
+let vix25sHasbuyCount = { value: 20 };
+let vix50sBuyCount = { value: 20 };
+let vix50sHasbuyCount = { value: 20 };
+let vix75sBuyCount = { value: 20 };
+let vix75sHasbuyCount = { value: 20 };
+
+let random = { value: 20 };
+let buyQuote = { value: null };
+let mainBalance = { value: 0 };
+const openContractQuote = { quote: null };
 
 const vix10spreviousQuote = { quote: null };
 
@@ -47,8 +77,11 @@ const proposal_request = {
   basis: "stake",
   contract_type: "ACCU",
   currency: "USD",
-  growth_rate: 0.01,
+  growth_rate: 0.05,
   symbol: "R_100",
+  limit_order: {
+    take_profit: 9.02,
+  },
   // duration: 1,
   //duration_unit: 'm',
 };
@@ -61,7 +94,7 @@ const balance_request = {
 const proposalResponse = async (res) => {
   const data = JSON.parse(res.data);
 
-  // console.log('Data: %o', data);
+   console.log('Data: %o', data);
 
   switch (data.msg_type) {
     case undefined:
@@ -91,80 +124,116 @@ const proposalResponse = async (res) => {
       // )
       balance_update.innerHTML = data.balance.balance;
       balance_currency.innerHTML = data.balance.currency;
+
+      if (data.balance.balance < mainBalance.value - 1.5) {
+        times.times = 0;
+      }
+
       break;
     case "tick":
       const tickquote = data.echo_req.ticks;
       const tick = data.tick.quote;
-
+// console.log("tick",tick)
+// console.log("tickquote",tickquote)  
       quotesFunction(
         "1HZ10V",
         vix10scurrentQuote,
         vix10spreviousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.00344,
+        vix10sBuyCount,
+        vix10sHasbuyCount
       );
       quotesFunction(
         "R_100",
         vix100currentQuote,
         vix100previousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.04863,
+        vix100BuyCount,
+        vix100HasbuyCount
       );
       quotesFunction(
         "1HZ100V",
         vix100scurrentQuote,
         vix100spreviousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.03438,
+        vix100sBuyCount,
+        vix100sHasbuyCount
       );
       quotesFunction(
         "R_10",
         vix10currentQuote,
         vix10previousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.00486,
+        vix10BuyCount,
+        vix10HasbuyCount
       );
       quotesFunction(
         "1HZ25V",
         vix25scurrentQuote,
         vix25spreviousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.00860,
+        vix25sBuyCount,
+        vix25sHasbuyCount
       );
       quotesFunction(
         "R_25",
         vix25currentQuote,
         vix25previousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.01216,
+        vix25BuyCount,
+        vix25HasbuyCount
       );
       quotesFunction(
         "1HZ50V",
         vix50scurrentQuote,
         vix50spreviousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.01719,
+        vix50sBuyCount,
+        vix50sHasbuyCount
       );
       quotesFunction(
         "R_50",
         vix50currentQuote,
         vix50previousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.02431,
+        vix50BuyCount,
+        vix50HasbuyCount
       );
       quotesFunction(
         "1HZ75V",
         vix75scurrentQuote,
         vix75spreviousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.02579,
+        vix75sBuyCount,
+        vix75sHasbuyCount
       );
       quotesFunction(
         "R_75",
         vix75currentQuote,
         vix75previousQuote,
         tick,
-        tickquote
+        tickquote,
+        0.03647,
+        vix75BuyCount,
+        vix75HasbuyCount
       );
 
       // //   // Track contract status and price for informed decisions
@@ -173,16 +242,18 @@ const proposalResponse = async (res) => {
       // onNewTick(data.tick);
       break;
     case "buy":
-      //console.log(data.buy);
+       console.log(data );
 
       break;
 
     case "sell":
-      if (data?.error?.code) {
-        hasOpenContract.value = true;
-        tmporalCount.value = 0;
-        sellContract();
-      }
+      console.log("sell contract at  ");
+      // if (data?.error?.code) {
+      //   await api.sell({
+      //     sell: contractId.value,
+      //     price: 0,
+      //   });
+      // }
 
       break;
 
@@ -199,49 +270,65 @@ const getProposal = async () => {
   // await api.proposal(proposal_request);
   await api.balance(balance_request);
   // proposal.remove()
+ await api.Transactions({
+  
+    "transaction": 1,
+    "subscribe": 1
+  
+});
   await api.ticks({
     ticks: "R_100",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "1HZ10V",
-    subscribe: 1,
+     
   });
 
-  await api.ticks({
-    ticks: "1HZ100V",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "1HZ100V",
+  //   subscribe: 1,
+  // });
 
-  await api.ticks({
-    ticks: "1HZ25V",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "1HZ50V",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "1HZ75V",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_10",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_25",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_50",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_75",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "1HZ25V",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_25",
+  //   subscribe: 1,
+  // });
 
+  // await api.ticks({
+  //   ticks: "1HZ10V",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_10",
+  //   subscribe: 1,
+  // });
+
+  // await api.ticks({
+  //   ticks: "R_50",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "1HZ50V",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_75",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "1HZ75V",
+  //   subscribe: 1,
+  // });
+
+  // const markup = await api.app_markup({
+  //   app_markup_statistics: 1,
+  //   date_from: "2022-01-01 00:00:00",
+  //   date_to: "2024-04-31 23:59:59",
+  //   passthrough: {},
+  //   req_id: 4,
+  // });
+  // console.log(markup);
   //console.log(balance)
   //await api.subscribe({ ticks: 'R_100' });
 };
@@ -253,7 +340,7 @@ const unsubscribeProposal = () => {
 
 const authorizeApp = async () => {
   console.log("here to authorise");
-  await api.authorize(user_accounts[0].token);
+  await api.authorize(user_accounts[4].token);
   console.log("authorised app");
 };
 
@@ -289,131 +376,174 @@ const user_accounts = [
   },
   {
     account: "VRTC3545234",
-    token: "a1-nagfGAF8F1SdlhdFuIZQNmhtwvn25",
+    token: "a1-EKrq52HI5qoN5GNdRAHWzSZPPIy6M",
     currency: "USD",
   },
 ];
 
 // Buy a contract on even count, tracking buy price
 const buyContract = async (symbolValue) => {
-  if (hasOpenContract.value === false) {
-    console.log("here is the times", times.times);
-    let buyPrice = parseFloat(Math.pow(1.01, times.times).toFixed(2));
+  // hasOpenContract.value = true;
+  // console.log(" times", times.times);
+  let buyPrice = parseFloat(Math.pow(1.03, times.times).toFixed(2));
 
-    const newPropsal = {
-      ...proposal_request,
-      amount: buyPrice,
-      symbol: symbolValue,
-    };
-    console.log("here is the new proposal", newPropsal);
+  const newPropsal = {
+    ...proposal_request,
+    amount: buyPrice,
+    symbol: symbolValue,
+  };
+
+  //const buyData =await api.buy(buyObject);
+  try {
     const proposalData = await api.proposal(newPropsal);
     const proposalId = proposalData.proposal.id;
-    // console.log("here is the propose ", proposalId);
-    // console.log("here is the  after buy price %s", buyPrice);
+    // console.log(" buy price %s", buyPrice);
     const buyObject = {
       buy: proposalId,
       price: 100,
     };
-    //const buyData =await api.buy(buyObject);
-    try {
-      await api.buy(buyObject);
-      times.times++;
-      if (times.times >= 50) {
-        times.times = 0;
-      }
-      hasOpenContract.value = true;
-      ongoing.value = symbolValue;
-      tmporalCount.value = 0;
-    } catch (e) {
-      console.log(e);
+    const buyNow = await api.buy(buyObject);
+    contractId.value = buyNow.buy.contract_id;
+    openContractQuote.quote = symbolValue;
+
+    times.times++;
+    if (times.times >= 60) {
+      times.times = 0;
     }
-    console.log("Buying contract at count", count, "for price", buyPrice);
-
-    // console.log("has open contract", hasOpenContract.value);
-  }
-};
-
-const sellContract = async () => {
-  console.log("here is the temporal count", tmporalCount.value);
-  // Sell (close) the contract on the next even count if open
-  tmporalCount.value++;
-
-  if (tmporalCount.value >= 2) {
-    console.log("here is the temporal count", tmporalCount.value);
-    console.log("Selling contract at count", count);
-    // Logic to sell (close) the contract based on buyPrice and current market data
-    // hasOpenContract.value = false;
-    // tmporalCount.value = 0;
-    const portfolioData = await api.portfolio({
-      portfolio: 1,
-    });
-    console.log("Portfolio", portfolioData);
-    try {
-      const contracts = portfolioData.portfolio.contracts;
-      const length = contracts.length;
-      const contractIds = contracts.map((contract) => contract.contract_id);
-
-      console.log("Length:", length);
-      console.log("Contract IDs:", contractIds);
-
-      for (const contractId of contractIds) {
-        const saleContract = await api.sell({
-          sell: contractId,
-          price: 0,
-        });
-
-        console.log("Sold contract:", saleContract);
-      }
-
+    //hasOpenContract.value = true;
+    console.log("Bought contract at  ", buyPrice);
+    console.log("contract ", symbolValue);
+  } catch (e) {
+    console.log(e);
+    console.log("error buying contract");
+    if (e?.error?.code === "RateLimit") {
+      console.log("rate limit");
       hasOpenContract.value = false;
-      ongoing.value = null;
-      tmporalCount.value = 0;
-    } catch (e) {
-      console.log(e);
-
       tmporalCount.value = 0;
     }
   }
 };
+
+// const sellContract = async () => {
+//   tmporalCount.value = tmporalCount.value + 1;
+//   console.log("here is the temp count %s", tmporalCount.value);
+//   if (tmporalCount.value >= 2) {
+//     try {
+//       const selling = await api.sell({
+//         sell: contractId.value,
+//         price: 0,
+//       });
+//       console.log("selling contract at  ", selling);
+//       hasOpenContract.value = false;
+//       tmporalCount.value = 0;
+//     } catch (e) {
+//       if (e?.error?.code === "InvalidSellPrice") {
+//         console.log("invalid sell  ");
+//         tmporalCount.value = 1;
+//       }
+
+//        if (e?.error?.code === "RateLimit") {
+//         console.log("rate limit");
+//         hasOpenContract.value = false;
+//         tmporalCount.value = 0;}
+//         if (e?.error?.code === "BetExpired") {
+//           console.log("bet expired");
+//           hasOpenContract.value = false;
+//           tmporalCount.value = 0;
+//           times.times = 0;
+//         }
+
+//         if (e?.error?.code === "InvalidSellContractProposal") {
+//           console.log("InvalidSellContractProposal");
+//           hasOpenContract.value = false;
+//           tmporalCount.value = 0;
+//           times.times = 0;
+//         }
+//       console.log(e);
+//     }
+//   }
+// };
 
 const quotesFunction = async (
   quote,
   currentquote,
   previosequote,
   tick,
-  tickquote
+  tickquote,
+  point,
+  buyCount,
+  hasbuyCount
 ) => {
   if (tickquote === quote) {
+    // if (
+    //   openContractQuote.quote == tickquote &&
+    //   hasOpenContract.value === true
+    // ) {
+    //   console.log(
+    //     "here is the open contract quote %s",
+    //     openContractQuote.quote
+    //   );
+    // //  sellContract();
+    console.log("here is the open contract quote %s", openContractQuote.quote);
+    // buyContract(quote);
     currentquote.quote = tick;
-
-    // saveTickDataToCsv(data.tick);
-    if (previosequote.quote !== null) {
-      // Skip the check for the first tick as there's no previous quote
-      const difference = currentquote.quote - previosequote.quote;
-      console.log(difference);
-      if (hasOpenContract.value == true && ongoing.value == quote) {
-        sellContract();
-      }
-
-      if (hasOpenContract.value === false) {
-        if (difference <= 0.024 && difference >= -0.024) {
-          console.log("The quote has gone up by 0.897 or more");
-          console.log("buying   %s", quote);
-          if (hasOpenContract.value == false) {
-            buyContract(quote);
-          }
-        }
-        //  else if (difference  >= -0.024) {
-        //   console.log("The quote has gone down by 0.897 or more");
-        //   console.log("buying  %s",quote);
-        //   buyContract(quote);
-        // }
-      } else {
-        console.log("no contract to buy");
-      }
+    if (hasbuyCount.value <   1) {
+      hasbuyCount.value = 2;
+      buyContract(quote);
+       
     }
 
-    // Update the previous quote for the next tick
-    previosequote.quote = currentquote.quote;
+    // if (previosequote.quote !== null) {
+    //   // Skip the check for the first tick as there's no previous quote
+    //   const percentage_change =
+    //     ((currentquote.quote - previosequote.quote) / previosequote.quote) *
+    //     100;
+    //   //console.log("here is the difference %s", percentage_change);
+
+    //   const within_limit = Math.abs(percentage_change) <= point;
+
+    //   // if (percentage_change == 0) {
+    //   //   console.log("the diffrence is 0");
+
+    //   //   buyContract(quote);
+    //   // }
+    //   if (within_limit) {
+    //       buyContract(quote);
+    //     buyCount.value += 1;
+    //   // console.log("Within Limits");
+    //     // console.log("hasbuyCount", hasbuyCount.value);
+    //     //console.log("tick count countbuy",buyCount.value);
+    //   } else {
+    //     //console.log("not within limit");
+
+    //     if (buyCount.value  <= 1) {
+    //       console.log("first strike.", tickquote);
+
+    //       // console.log("buying   %s", quote);
+    //       // buyContract(quote);
+    //       hasbuyCount.value = 0;
+    //     } else if (hasbuyCount.value <= 4) {
+    //       hasbuyCount.value += 1;
+         
+    //         buyContract(quote);
+         
+
+    //       buyCount.value += 1;
+    //     } else {
+    //       buyCount.value = 0;
+    //     }
+
+    //     // // console.log(
+    //     // //   "The current price is not within ±%s% from the previous price.",
+    //     // //   point
+    //     // // );
+    //     // // if (hasOpenContract.value == false) {
+    //     // //  // console.log("buying   %s", quote);
+    //     // //   buyContract(quote);
+    //     // // }
+    //   }
+    // }
   }
+  // Update the previous quote for the next tick
+  previosequote.quote = currentquote.quote;
 };
