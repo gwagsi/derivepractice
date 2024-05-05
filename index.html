@@ -7,9 +7,24 @@
   <title>FEYINS BOT</title>
   
   <style>
-    
+    .price-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); /* 10 columns per row */
+      gap: 10px; /* Space between grid items */
+    }
+    .price {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
 
- 
+    .red {
+    color: red;
+  }
+
+  .green {
+    color: white;
+  }
   </style>
 </head>
 <body>
@@ -31,11 +46,13 @@
   <div id="proposal-update">
      
   </div>
-  <div class="chart">
+  <div id="price-container" class="price-container"></div>
+
+  <!-- <div class="chart">
     <canvas id="myChart"></canvas>
-  </div>
+  </div> -->
   <script type="module" src="./core.js"></script>
-  <script type="module" src="./chart.js"></script>
+  <!-- <script type="module" src="./chart.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    
   <script type="module" src="./login/login.js"></script>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Data</title>
+  <style>
+    .price-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr); /* 10 columns per row */
+      gap: 10px; /* Space between grid items */
+    }
+    .price {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 5px;
+    }
+
+    .red {
+    color: red;
+  }
+
+  .green {
+    color: green;
+  }
+  </style>
+</head>
+<body>
+  <h1>Price Data</h1>
+  <div id="price-container" class="price-container"></div>
+
+  <script>
+    const priceContainer = document.getElementById('price-container');
+
+    async function fetchPrices() {
+        console.log('fetching prices');
+      try {
+        const response = await fetch('http://localhost:3000/prices', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        });
+    console.log('response', response);
+        const prices = await response.json();
+console.log('prices', prices);
+        // Display prices in a ten-column format
+        let columnCount = 0;
+        let row = document.createElement('div');
+        priceContainer.appendChild(row); // Corrected line
+
+        // for (const price of prices) {
+        //   const priceElement = document.createElement('div');
+        //   priceElement.classList.add('price');
+        //   priceElement.textContent = price;
+
+        //   row.appendChild(priceElement);
+        //   columnCount++;
+
+        //   if (columnCount === 10) {
+        //     columnCount = 0;
+        //     row = document.createElement('div');
+        //     priceContainer.appendChild(row); // Added the missing line
+        //   }
+        // }
+        for (const price of prices) {
+    const priceElement = document.createElement('div');
+    priceElement.classList.add('price');
+    priceElement.textContent = price;
+    if (price === 1) {
+      priceElement.classList.add('red');
+    }
+
+    if(price>=20){
+        priceElement.classList.add('green');
+    }
+    priceContainer.appendChild(priceElement); // Append the price element directly to the priceContainer
+  }
+      } catch (error) {
+        console.error('Error fetching prices:', error);
+        // Handle errors (e.g., display an error message to the user)
+      }
+    }
+
+    fetchPrices();
+  </script>
+</body>
+</html>

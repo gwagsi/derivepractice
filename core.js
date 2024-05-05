@@ -1,5 +1,6 @@
  
-import { DerivAPI } from "@deriv/deriv-api/dist/DerivAPI";
+import DerivAPIBasic from "https://cdn.skypack.dev/@deriv/deriv-api/dist/DerivAPIBasic";
+
 // import { onNewTick } from "./chart.js";
 // import { saveTickDataToCsv } from "./save_tick_tofile.js";
 const app_id = 53485; // Replace with your app_id or leave as 1089 for testing.
@@ -7,10 +8,9 @@ const connection = new WebSocket(
   `wss://ws.derivws.com/websockets/v3?app_id=${app_id}`
 );
 
-const basic        = new DerivAPI({ connection });
-const api = basic.basic;
+const api = new DerivAPIBasic({ connection });
 //const api = new DerivAPIBasic({ connection });
-console.log(api);
+ 
 var count = 0;
 var previousQuote = null;
 const times = { times: 0 };
@@ -68,6 +68,9 @@ const vix75spreviousQuote = { quote: null };
 const vix75currentQuote = { quote: null };
 const vix75previousQuote = { quote: null };
 
+
+const priceContainer = document.getElementById('price-container');
+
 // list of all dom elements
 
 const proposal_request = {
@@ -94,7 +97,7 @@ const balance_request = {
 const proposalResponse = async (res) => {
   const data = JSON.parse(res.data);
 
-   console.log('Data: %o', data);
+   
 
   switch (data.msg_type) {
     case undefined:
@@ -270,12 +273,7 @@ const getProposal = async () => {
   // await api.proposal(proposal_request);
   await api.balance(balance_request);
   // proposal.remove()
- await api.Transactions({
-  
-    "transaction": 1,
-    "subscribe": 1
-  
-});
+ 
   await api.ticks({
     ticks: "R_100",
      
@@ -475,75 +473,53 @@ const quotesFunction = async (
   hasbuyCount
 ) => {
   if (tickquote === quote) {
-    // if (
-    //   openContractQuote.quote == tickquote &&
-    //   hasOpenContract.value === true
-    // ) {
-    //   console.log(
-    //     "here is the open contract quote %s",
-    //     openContractQuote.quote
-    //   );
-    // //  sellContract();
-    console.log("here is the open contract quote %s", openContractQuote.quote);
-    // buyContract(quote);
     currentquote.quote = tick;
-    if (hasbuyCount.value <   1) {
-      hasbuyCount.value = 2;
-      buyContract(quote);
-       
+
+    if (previosequote.quote !== null) {
+      console.log("quote", quote);
+      // Skip the check for the first tick as there's no previous quote
+      const percentage_change =
+        ((currentquote.quote - previosequote.quote) / previosequote.quote) *
+        100;
+        previosequote.quote = currentquote.quote;
+
+      const within_limit = Math.abs(percentage_change) <= point;
+
+      if (within_limit) {
+        buyCount.value += 1;
+      
+        // console.log("Within Limits");
+        // console.log("hasbuyCount", hasbuyCount.value);
+        //console.log("tick count countbuy",buyCount.value);
+      } else {
+        const priceElement = document.createElement('div');
+        priceElement.classList.add('price');
+        priceElement.textContent = buyCount.value;
+        if ( buyCount.value === 1) {
+          priceElement.classList.add('red');
+        }
+    
+        if( buyCount.value>=20){
+            priceElement.classList.add('green');
+        }
+        priceContainer.prepend(priceElement);
+        //console.log("spike");
+       // console.log("hasbuyCount", hasbuyCount.value);
+        if (buyCount.value >= 20 && hasbuyCount.value <= 4) {
+          
+         // console.log("count for %s is %s", quote, buyCount.value);
+          buyCount.value = 0;
+          hasbuyCount.value += 1;
+
+          buyContract(quote);
+        } else {
+          buyCount.value = 0;
+        }
+      }
+    } else {
+      previosequote.quote = currentquote.quote;
+      buyCount.value = 0;
     }
-
-    // if (previosequote.quote !== null) {
-    //   // Skip the check for the first tick as there's no previous quote
-    //   const percentage_change =
-    //     ((currentquote.quote - previosequote.quote) / previosequote.quote) *
-    //     100;
-    //   //console.log("here is the difference %s", percentage_change);
-
-    //   const within_limit = Math.abs(percentage_change) <= point;
-
-    //   // if (percentage_change == 0) {
-    //   //   console.log("the diffrence is 0");
-
-    //   //   buyContract(quote);
-    //   // }
-    //   if (within_limit) {
-    //       buyContract(quote);
-    //     buyCount.value += 1;
-    //   // console.log("Within Limits");
-    //     // console.log("hasbuyCount", hasbuyCount.value);
-    //     //console.log("tick count countbuy",buyCount.value);
-    //   } else {
-    //     //console.log("not within limit");
-
-    //     if (buyCount.value  <= 1) {
-    //       console.log("first strike.", tickquote);
-
-    //       // console.log("buying   %s", quote);
-    //       // buyContract(quote);
-    //       hasbuyCount.value = 0;
-    //     } else if (hasbuyCount.value <= 4) {
-    //       hasbuyCount.value += 1;
-         
-    //         buyContract(quote);
-         
-
-    //       buyCount.value += 1;
-    //     } else {
-    //       buyCount.value = 0;
-    //     }
-
-    //     // // console.log(
-    //     // //   "The current price is not within ±%s% from the previous price.",
-    //     // //   point
-    //     // // );
-    //     // // if (hasOpenContract.value == false) {
-    //     // //  // console.log("buying   %s", quote);
-    //     // //   buyContract(quote);
-    //     // // }
-    //   }
-    // }
+    // Update the previous quote for the next tick
   }
-  // Update the previous quote for the next tick
-  previosequote.quote = currentquote.quote;
 };

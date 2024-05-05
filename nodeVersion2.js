@@ -1,6 +1,8 @@
-// @ts-nocheck
+ 
 import DerivAPI from "@deriv/deriv-api/dist/DerivAPI.js";
 import WebSocket from "ws";
+ 
+import fs from 'fs';
 
 // import { onNewTick } from "./chart.js";
 // import { saveTickDataToCsv } from "./save_tick_tofile.js";
@@ -78,10 +80,10 @@ const proposal_request = {
   basis: "stake",
   contract_type: "ACCU",
   currency: "USD",
-  growth_rate: 0.05,
+  growth_rate: 0.01,
   symbol: "R_100",
   limit_order: {
-    take_profit: 0.02,
+    take_profit: 0.001,
   },
   // duration: 1,
   //duration_unit: 'm',
@@ -266,6 +268,14 @@ connection.on("message", async (message) => {
       if (data.msg_type === "history") {
         console.log(" prices: %s", data.history.prices);
         console.log("times: %s", data.history.times);
+        const jsonData = JSON.stringify(data.history.prices);
+        fs.writeFile("prices.json", jsonData, (err) => {
+          if (err) {
+            console.log("Error writing file", err);
+          } else {
+            console.log("Successfully wrote file");
+          }
+        });
       }
 
       break;
@@ -296,53 +306,53 @@ const getProposal = async () => {
   //   style: "ticks",
   // });
 
-  await api.transaction({
-    transaction: 1,
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_100",
-  });
+  // await api.transaction({
+  //   transaction: 1,
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_100",
+  // });
 
-  await api.ticks({
-    ticks: "1HZ100V",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "1HZ100V",
+  //   subscribe: 1,
+  // });
 
   await api.ticks({
     ticks: "1HZ25V",
     subscribe: 1,
   });
-  await api.ticks({
-    ticks: "R_25",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "R_25",
+  //   subscribe: 1,
+  // });
 
-  await api.ticks({
-    ticks: "1HZ10V",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_10",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "1HZ10V",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_10",
+  //   subscribe: 1,
+  // });
 
-  await api.ticks({
-    ticks: "R_50",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "1HZ50V",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "R_75",
-    subscribe: 1,
-  });
-  await api.ticks({
-    ticks: "1HZ75V",
-    subscribe: 1,
-  });
+  // await api.ticks({
+  //   ticks: "R_50",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "1HZ50V",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "R_75",
+  //   subscribe: 1,
+  // });
+  // await api.ticks({
+  //   ticks: "1HZ75V",
+  //   subscribe: 1,
+  // });
 
   // const markup = await api.app_markup({
   //   app_markup_statistics: 1,
@@ -394,7 +404,7 @@ const user_accounts = [
 const buyContract = async (symbolValue) => {
   // hasOpenContract.value = true;
   // console.log(" times", times.times);
-  let buyPrice = parseFloat(Math.pow(1.03, times.times).toFixed(2));
+  let buyPrice = parseFloat(Math.pow(1.05, times.times).toFixed(2));
 
   const newPropsal = {
     ...proposal_request,
@@ -416,7 +426,7 @@ const buyContract = async (symbolValue) => {
     openContractQuote.quote = symbolValue;
 
     times.times++;
-    if (times.times >= 60) {
+    if (times.times >= 15) {
       times.times = 0;
       resetHasBuyCount();
     }
@@ -477,17 +487,18 @@ const quotesFunction = async (
         //console.log("tick count countbuy",buyCount.value);
       } else {
    
+        buyContract(quote);
         //console.log("spike");
        // console.log("hasbuyCount", hasbuyCount.value);
-        if (buyCount.value >= 20 && hasbuyCount.value <= 4) {
-         // console.log("count for %s is %s", quote, buyCount.value);
-          buyCount.value = 0;
-          hasbuyCount.value += 1;
+        // if (buyCount.value >= 20 && hasbuyCount.value <= 4) {
+        //  // console.log("count for %s is %s", quote, buyCount.value);
+        //   buyCount.value = 0;
+        //   hasbuyCount.value += 1;
 
-          buyContract(quote);
-        } else {
-          buyCount.value = 0;
-        }
+        //   buyContract(quote);
+        // } else {
+        //   buyCount.value = 0;
+        // }
       }
     } else {
       previosequote.quote = currentquote.quote;
