@@ -307,7 +307,7 @@ connection.on("message", async (message) => {
         console.log(" we lost a trade at,", data.transaction.symbol);
         console.log("starting back at 1");
         times.times = 0;
-        resetHasBuyCount();
+       // resetHasBuyCount();
       }
       if (data.transaction.amount >= 1) {
         console.log(" we won a trade at,", data.transaction.symbol);
@@ -520,7 +520,7 @@ const quotesFunction = async (
 
             hasbuyCount.value += 1;
             if (hasbuyCount.value>=3
-              
+
             ){
               hasbuyCount.value=0
               if (tickquote=="1HZ10V"){
