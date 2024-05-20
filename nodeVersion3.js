@@ -1,7 +1,8 @@
+ 
 import DerivAPI from "@deriv/deriv-api/dist/DerivAPI.js";
 import WebSocket from "ws";
-
-import fs from "fs";
+ 
+import fs from 'fs';
 
 // import { onNewTick } from "./chart.js";
 // import { saveTickDataToCsv } from "./save_tick_tofile.js";
@@ -69,60 +70,7 @@ const vix75scurrentQuote = { quote: null };
 const vix75spreviousQuote = { quote: null };
 const vix75currentQuote = { quote: null };
 const vix75previousQuote = { quote: null };
-///  all the contracts
 
-const vix100 = async () =>
-  await api.ticks({
-    ticks: "R_100",
-  });
-
-const vix100s = async () =>
-  await api.ticks({
-    ticks: "1HZ100V",
-    subscribe: 1,
-  });
-
-const vix25s = async () =>
-  await api.ticks({
-    ticks: "1HZ25V",
-    subscribe: 1,
-  });
-const vix25 = async () =>
-  await api.ticks({
-    ticks: "R_25",
-    subscribe: 1,
-  });
-
-const vix10s = async () =>
-  await api.ticks({
-    ticks: "1HZ10V",
-    subscribe: 1,
-  });
-const vix10 = async () =>
-  await api.ticks({
-    ticks: "R_10",
-    subscribe: 1,
-  });
-const vix50 = async () =>
-  await api.ticks({
-    ticks: "R_50",
-    subscribe: 1,
-  });
-const vix50s = async () =>
-  await api.ticks({
-    ticks: "1HZ50V",
-    subscribe: 1,
-  });
-const vix75 = async () =>
-  await api.ticks({
-    ticks: "R_75",
-    subscribe: 1,
-  });
-const vix75s = async () =>
-  await api.ticks({
-    ticks: "1HZ75V",
-    subscribe: 1,
-  });
 // list of all dom elements
 
 const proposal_request = {
@@ -132,7 +80,7 @@ const proposal_request = {
   basis: "stake",
   contract_type: "ACCU",
   currency: "USD",
-  growth_rate: 0.05,
+  growth_rate: 0.04,
   symbol: "R_100",
   limit_order: {
     take_profit: 0.01,
@@ -187,7 +135,7 @@ connection.on("message", async (message) => {
         vix10spreviousQuote,
         tick,
         tickquote,
-        0.00344,
+        0.00361,
         vix10sBuyCount,
         vix10sHasbuyCount
       );
@@ -197,7 +145,7 @@ connection.on("message", async (message) => {
         vix100previousQuote,
         tick,
         tickquote,
-        0.04863,
+        0.05109,
         vix100BuyCount,
         vix100HasbuyCount
       );
@@ -207,7 +155,7 @@ connection.on("message", async (message) => {
         vix100spreviousQuote,
         tick,
         tickquote,
-        0.03438,
+        0.03612,
         vix100sBuyCount,
         vix100sHasbuyCount
       );
@@ -217,7 +165,7 @@ connection.on("message", async (message) => {
         vix10previousQuote,
         tick,
         tickquote,
-        0.00486,
+        0.00511,
         vix10BuyCount,
         vix10HasbuyCount
       );
@@ -227,7 +175,7 @@ connection.on("message", async (message) => {
         vix25spreviousQuote,
         tick,
         tickquote,
-        0.0086,
+        0.00903,
         vix25sBuyCount,
         vix25sHasbuyCount
       );
@@ -237,7 +185,7 @@ connection.on("message", async (message) => {
         vix25previousQuote,
         tick,
         tickquote,
-        0.01216,
+        0.01277,
         vix25BuyCount,
         vix25HasbuyCount
       );
@@ -247,7 +195,7 @@ connection.on("message", async (message) => {
         vix50spreviousQuote,
         tick,
         tickquote,
-        0.01719,
+        0.01806,
         vix50sBuyCount,
         vix50sHasbuyCount
       );
@@ -257,7 +205,7 @@ connection.on("message", async (message) => {
         vix50previousQuote,
         tick,
         tickquote,
-        0.02431,
+        0.02554,
         vix50BuyCount,
         vix50HasbuyCount
       );
@@ -267,7 +215,7 @@ connection.on("message", async (message) => {
         vix75spreviousQuote,
         tick,
         tickquote,
-        0.02579,
+        0.02709,
         vix75sBuyCount,
         vix75sHasbuyCount
       );
@@ -277,7 +225,7 @@ connection.on("message", async (message) => {
         vix75previousQuote,
         tick,
         tickquote,
-        0.03647,
+        0.03831,
         vix75BuyCount,
         vix75HasbuyCount
       );
@@ -307,7 +255,7 @@ connection.on("message", async (message) => {
         console.log(" we lost a trade at,", data.transaction.symbol);
         console.log("starting back at 1");
         times.times = 0;
-        resetHasBuyCount();
+       resetHasBuyCount();
       }
       if (data.transaction.amount >= 1) {
         console.log(" we won a trade at,", data.transaction.symbol);
@@ -316,6 +264,7 @@ connection.on("message", async (message) => {
       break;
 
     default:
+       
       if (data.msg_type === "history") {
         console.log(" prices: %s", data.history.prices);
         console.log("times: %s", data.history.times);
@@ -361,17 +310,49 @@ const getProposal = async () => {
     transaction: 1,
     subscribe: 1,
   });
+  await api.ticks({
+    ticks: "R_100",
+  });
 
-  // vix10s();
-  // vix10();
-  // vix25();
-  // vix25s();
-  // vix50();
-  // vix50s();
-  // vix75();
-  // vix75s();
-  vix100();
-  //vix100s();
+  await api.ticks({
+    ticks: "1HZ100V",
+    subscribe: 1,
+  });
+
+  await api.ticks({
+    ticks: "1HZ25V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_25",
+    subscribe: 1,
+  });
+
+  await api.ticks({
+    ticks: "1HZ10V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_10",
+    subscribe: 1,
+  });
+
+  await api.ticks({
+    ticks: "R_50",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "1HZ50V",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "R_75",
+    subscribe: 1,
+  });
+  await api.ticks({
+    ticks: "1HZ75V",
+    subscribe: 1,
+  });
 
   // const markup = await api.app_markup({
   //   app_markup_statistics: 1,
@@ -387,14 +368,14 @@ const getProposal = async () => {
 
 const authorizeApp = async () => {
   console.log("here to authorise");
-  await api.authorize(user_accounts[0].token);
+  await api.authorize(user_accounts[4].token);
   console.log("authorised app");
 };
 
 const user_accounts = [
   {
     account: "CR2120738",
-    token: "a1-7hU2CLghrDogKaZTE9BCmZJQdaEmL",
+    token: "a1-sZJg3FkK3gF9yxYBDYFSeD1HaRZnH",
     currency: "USD",
   },
   {
@@ -423,11 +404,11 @@ const user_accounts = [
 const buyContract = async (symbolValue) => {
   // hasOpenContract.value = true;
   // console.log(" times", times.times);
-  let buyPrice = parseFloat(Math.pow(1, times.times).toFixed(2));
+  let buyPrice = parseFloat(Math.pow(1.04, times.times).toFixed(2));
 
   const newPropsal = {
     ...proposal_request,
-    amount: 1,
+    amount: buyPrice,
     symbol: symbolValue,
   };
 
@@ -444,32 +425,11 @@ const buyContract = async (symbolValue) => {
     contractId.value = buyNow.buy.contract_id;
     openContractQuote.quote = symbolValue;
 
-    times.times++;
-    console.log("times ", times.times);
-    if (times.times >= 15) {
-      await vix10().unsubscribe();
-      await vix10s().unsubscribe();
-      await vix25().unsubscribe();
-      await vix25s().unsubscribe();
-      await vix50().unsubscribe();
-      await vix50s().unsubscribe();
-      await vix75().unsubscribe();
-      await vix75s().unsubscribe();
-      await vix100().unsubscribe();
-      await vix100s().unsubscribe();
-      hasOpenContract.value = false;
-      resetHasBuyCount();
-      const delayMinutes = Math.floor(Math.random() * 5) + 1;
-      setTimeout(() => {
-        // Reset times
-        times.times = 0;
-        // Reset all buy counts
-        getProposal();
-      }, delayMinutes * 60 * 1000);
-
-      //  times.times = 0;
-      //  resetHasBuyCount();
-    }
+    // times.times++;
+    // if (times.times >= 15) {
+    //   times.times = 0;
+    //   resetHasBuyCount();
+    // }
     //hasOpenContract.value = true;
     // console.log("Bought contract at  ", buyPrice);
     // console.log("contract ", symbolValue);
@@ -495,7 +455,7 @@ const resetHasBuyCount = () => {
   vix25HasbuyCount.value = 0;
   vix50HasbuyCount.value = 0;
   vix75HasbuyCount.value = 0;
-};
+}
 
 const quotesFunction = async (
   quote,
@@ -507,13 +467,7 @@ const quotesFunction = async (
   buyCount,
   hasbuyCount
 ) => {
-
-
   if (tickquote === quote) {
- 
-
-
-
     currentquote.quote = tick;
 
     if (previosequote.quote !== null) {
@@ -521,7 +475,7 @@ const quotesFunction = async (
       const percentage_change =
         ((currentquote.quote - previosequote.quote) / previosequote.quote) *
         100;
-      previosequote.quote = currentquote.quote;
+        previosequote.quote = currentquote.quote;
 
       const within_limit = Math.abs(percentage_change) <= point;
 
@@ -532,21 +486,20 @@ const quotesFunction = async (
         // console.log("hasbuyCount", hasbuyCount.value);
         //console.log("tick count countbuy",buyCount.value);
       } else {
-        buyContract(quote);
-        //   console.log("spike");
-        //  console.log("hasbuyCount", hasbuyCount.value);
-        // if (buyCount.value >= 20) {
-        //   console.log("buY Count", buyCount.value);
-        //   // console.log("count for %s is %s", quote, buyCount.value);
-        //   buyCount.value = 0;
-        //   // hasbuyCount.value += 1;
+   
+       
+      //   console.log("spike");
+      //  console.log("hasbuyCount", hasbuyCount.value);
+        if (buyCount.value <=0  ) {
+          console.log("buY Count", buyCount.value);
+         // console.log("count for %s is %s", quote, buyCount.value);
+          buyCount.value = 0;
+          // hasbuyCount.value += 1;
 
-        //   if (hasOpenContract.value == false) {
-        //     buyContract(quote);
-        //   }
-        // } else {
-        //   buyCount.value = 0;
-        // }
+          buyContract(quote);
+        } else {
+          buyCount.value = 0;
+        }
       }
     } else {
       previosequote.quote = currentquote.quote;

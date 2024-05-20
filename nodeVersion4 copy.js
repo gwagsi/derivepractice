@@ -132,7 +132,7 @@ const proposal_request = {
   basis: "stake",
   contract_type: "ACCU",
   currency: "USD",
-  growth_rate: 0.05,
+  growth_rate: 0.03,
   symbol: "R_100",
   limit_order: {
     take_profit: 0.01,
@@ -187,7 +187,7 @@ connection.on("message", async (message) => {
         vix10spreviousQuote,
         tick,
         tickquote,
-        0.00344,
+        0.00380,
         vix10sBuyCount,
         vix10sHasbuyCount
       );
@@ -197,7 +197,7 @@ connection.on("message", async (message) => {
         vix100previousQuote,
         tick,
         tickquote,
-        0.04863,
+        0.05369,
         vix100BuyCount,
         vix100HasbuyCount
       );
@@ -207,7 +207,7 @@ connection.on("message", async (message) => {
         vix100spreviousQuote,
         tick,
         tickquote,
-        0.03438,
+        0.03797,
         vix100sBuyCount,
         vix100sHasbuyCount
       );
@@ -217,7 +217,7 @@ connection.on("message", async (message) => {
         vix10previousQuote,
         tick,
         tickquote,
-        0.00486,
+        0.00537,
         vix10BuyCount,
         vix10HasbuyCount
       );
@@ -227,7 +227,7 @@ connection.on("message", async (message) => {
         vix25spreviousQuote,
         tick,
         tickquote,
-        0.0086,
+        0.00949,
         vix25sBuyCount,
         vix25sHasbuyCount
       );
@@ -237,7 +237,7 @@ connection.on("message", async (message) => {
         vix25previousQuote,
         tick,
         tickquote,
-        0.01216,
+        0.01342,
         vix25BuyCount,
         vix25HasbuyCount
       );
@@ -247,7 +247,7 @@ connection.on("message", async (message) => {
         vix50spreviousQuote,
         tick,
         tickquote,
-        0.01719,
+        0.01898,
         vix50sBuyCount,
         vix50sHasbuyCount
       );
@@ -257,7 +257,7 @@ connection.on("message", async (message) => {
         vix50previousQuote,
         tick,
         tickquote,
-        0.02431,
+        0.02685,
         vix50BuyCount,
         vix50HasbuyCount
       );
@@ -267,7 +267,7 @@ connection.on("message", async (message) => {
         vix75spreviousQuote,
         tick,
         tickquote,
-        0.02579,
+        0.02847,
         vix75sBuyCount,
         vix75sHasbuyCount
       );
@@ -277,7 +277,7 @@ connection.on("message", async (message) => {
         vix75previousQuote,
         tick,
         tickquote,
-        0.03647,
+        0.04027,
         vix75BuyCount,
         vix75HasbuyCount
       );
@@ -362,16 +362,16 @@ const getProposal = async () => {
     subscribe: 1,
   });
 
-  // vix10s();
-  // vix10();
-  // vix25();
-  // vix25s();
-  // vix50();
-  // vix50s();
-  // vix75();
-  // vix75s();
+  vix10s();
+  vix10();
+  vix25();
+  vix25s();
+  vix50();
+  vix50s();
+  vix75();
+  vix75s();
   vix100();
-  //vix100s();
+  vix100s();
 
   // const markup = await api.app_markup({
   //   app_markup_statistics: 1,
@@ -427,7 +427,7 @@ const buyContract = async (symbolValue) => {
 
   const newPropsal = {
     ...proposal_request,
-    amount: 1,
+    amount: buyPrice,
     symbol: symbolValue,
   };
 
@@ -446,33 +446,8 @@ const buyContract = async (symbolValue) => {
 
     times.times++;
     console.log("times ", times.times);
-    if (times.times >= 15) {
-      await vix10().unsubscribe();
-      await vix10s().unsubscribe();
-      await vix25().unsubscribe();
-      await vix25s().unsubscribe();
-      await vix50().unsubscribe();
-      await vix50s().unsubscribe();
-      await vix75().unsubscribe();
-      await vix75s().unsubscribe();
-      await vix100().unsubscribe();
-      await vix100s().unsubscribe();
-      hasOpenContract.value = false;
-      resetHasBuyCount();
-      const delayMinutes = Math.floor(Math.random() * 5) + 1;
-      setTimeout(() => {
-        // Reset times
-        times.times = 0;
-        // Reset all buy counts
-        getProposal();
-      }, delayMinutes * 60 * 1000);
-
-      //  times.times = 0;
-      //  resetHasBuyCount();
-    }
-    //hasOpenContract.value = true;
-    // console.log("Bought contract at  ", buyPrice);
-    // console.log("contract ", symbolValue);
+    
+     
   } catch (e) {
     console.log(e);
     console.log("error buying contract");
@@ -507,52 +482,74 @@ const quotesFunction = async (
   buyCount,
   hasbuyCount
 ) => {
-
-
   if (tickquote === quote) {
- 
+    if (hasbuyCount.value >= 1) {
+      currentquote.quote = tick;
 
+      if (previosequote.quote !== null) {
+        const percentage_change =
+          ((currentquote.quote - previosequote.quote) / previosequote.quote) *
+          100;
+        previosequote.quote = currentquote.quote;
 
+        const within_limit = Math.abs(percentage_change) <= point;
 
-    currentquote.quote = tick;
+        if (within_limit) {
+          buyCount.value += 1;
+          //console.log(buyCount.value);
+          // console.log("Within Limits");
+          // console.log("hasbuyCount", hasbuyCount.value);
+          //console.log("tick count countbuy",buyCount.value);
+        } else {
+          if ((buyCount.value = 1)) {
+            console.log("buying contract ", quote);
+            buyCount.value = 0;
+            hasbuyCount.value += 1;
+            await buyContract(quote);
+           
+          } else 
+          if (hasOpenContract.value >= 2) {
+            console.log("buying contract ", quote);
+           
+            buyCount.value = 0;
 
-    if (previosequote.quote !== null) {
-      // Skip the check for the first tick as there's no previous quote
-      const percentage_change =
-        ((currentquote.quote - previosequote.quote) / previosequote.quote) *
-        100;
-      previosequote.quote = currentquote.quote;
+            hasbuyCount.value += 1;
+            if (hasbuyCount.value>=4){
+              hasbuyCount.value=0
+              if (tickquote=="1HZ10V"){
+                vix10HasbuyCount.value=1
+              } else if (tickquote=="R_10"){
+                vix25sHasbuyCount.value=1
+              }
+              else if (tickquote=="1HZ25V"){
+                vix25HasbuyCount.value=1
+              }else if (tickquote=="R_25"){
+                vix50sHasbuyCount.value=1
+              }else if (tickquote=="1HZ50V"){
+                vix50HasbuyCount.value=1
+              }else if (tickquote=="R_50"){
+                vix75sHasbuyCount.value=1
+              }else if (tickquote=="1HZ75V"){
+                vix75HasbuyCount.value=1
+              }else if (tickquote=="R_75"){
+                vix100sHasbuyCount.value=1
+              }else if (tickquote=="1HZ100V"){
+                vix100HasbuyCount.value=1
+              }else if (tickquote=="R_100"){
+                vix10sHasbuyCount.value=1
+              } 
 
-      const within_limit = Math.abs(percentage_change) <= point;
+            }
+            await buyContract(quote);
 
-      if (within_limit) {
-        buyCount.value += 1;
-        //console.log(buyCount.value);
-        // console.log("Within Limits");
-        // console.log("hasbuyCount", hasbuyCount.value);
-        //console.log("tick count countbuy",buyCount.value);
+          }
+        }
       } else {
-        buyContract(quote);
-        //   console.log("spike");
-        //  console.log("hasbuyCount", hasbuyCount.value);
-        // if (buyCount.value >= 20) {
-        //   console.log("buY Count", buyCount.value);
-        //   // console.log("count for %s is %s", quote, buyCount.value);
-        //   buyCount.value = 0;
-        //   // hasbuyCount.value += 1;
-
-        //   if (hasOpenContract.value == false) {
-        //     buyContract(quote);
-        //   }
-        // } else {
-        //   buyCount.value = 0;
-        // }
+        previosequote.quote = currentquote.quote;
+        buyCount.value = 0;
       }
-    } else {
-      previosequote.quote = currentquote.quote;
-      buyCount.value = 0;
+      // Update the previous quote for the next tick
     }
-    // Update the previous quote for the next tick
   }
 };
 
