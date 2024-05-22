@@ -175,7 +175,7 @@ connection.on("message", async (message) => {
     //   break;
     case "balance":
       console.log("balance", data.balance.balance);
-      random.value= data.balance.balance
+       
       break;
     case "tick":
       const tickquote = data.echo_req.ticks;
@@ -424,11 +424,11 @@ const user_accounts = [
 const buyContract = async (symbolValue) => {
   // hasOpenContract.value = true;
   // console.log(" times", times.times);
-  let buyPrice = (parseFloat(Math.pow(1.02, times.times)*2 ).toFixed(2));
+  let buyPrice = (parseFloat(Math.pow(1.02, times.times)*1 ).toFixed(2));
 
   const newPropsal = {
     ...proposal_request,
-    amount: random.value,
+    amount: buyPrice,
     symbol: symbolValue,
   };
 
@@ -451,7 +451,7 @@ const buyContract = async (symbolValue) => {
       {
         times.times=0
         console.log("Starting back at one")
-        connection.close(1000, 'Closing connection normally');
+        //connection.close(1000, 'Closing connection normally');
       }
     
      
@@ -564,4 +564,4 @@ const quotesFunction = async (
 
 getProposal();
 // Call getProposale every 30 minutes
-setInterval(getProposal , 5 * 60 * 1000);
+ 
