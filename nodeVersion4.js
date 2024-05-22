@@ -132,7 +132,7 @@ const proposal_request = {
   basis: "stake",
   contract_type: "ACCU",
   currency: "USD",
-  growth_rate: 0.02,
+  growth_rate: 0.01,
   symbol: "R_100",
   limit_order: {
     take_profit: 0.01,
@@ -175,6 +175,7 @@ connection.on("message", async (message) => {
     //   break;
     case "balance":
       console.log("balance", data.balance.balance);
+      random.value= data.balance.balance
       break;
     case "tick":
       const tickquote = data.echo_req.ticks;
@@ -187,7 +188,7 @@ connection.on("message", async (message) => {
         vix10spreviousQuote,
         tick,
         tickquote,
-        0.00405,
+        0.00433,
         vix10sBuyCount,
         vix10sHasbuyCount
       );
@@ -197,7 +198,7 @@ connection.on("message", async (message) => {
         vix100previousQuote,
         tick,
         tickquote,
-        0.05725,
+        0.06126,
         vix100BuyCount,
         vix100HasbuyCount
       );
@@ -207,7 +208,7 @@ connection.on("message", async (message) => {
         vix100spreviousQuote,
         tick,
         tickquote,
-        0.04048,
+        0.04331,
         vix100sBuyCount,
         vix100sHasbuyCount
       );
@@ -217,7 +218,7 @@ connection.on("message", async (message) => {
         vix10previousQuote,
         tick,
         tickquote,
-        0.00573,
+        0.00613,
         vix10BuyCount,
         vix10HasbuyCount
       );
@@ -227,7 +228,7 @@ connection.on("message", async (message) => {
         vix25spreviousQuote,
         tick,
         tickquote,
-        0.01012,
+        0.01083,
         vix25sBuyCount,
         vix25sHasbuyCount
       );
@@ -237,7 +238,7 @@ connection.on("message", async (message) => {
         vix25previousQuote,
         tick,
         tickquote,
-        0.01431,
+        0.01531,
         vix25BuyCount,
         vix25HasbuyCount
       );
@@ -247,7 +248,7 @@ connection.on("message", async (message) => {
         vix50spreviousQuote,
         tick,
         tickquote,
-        0.02024,
+        0.02166,
         vix50sBuyCount,
         vix50sHasbuyCount
       );
@@ -257,7 +258,7 @@ connection.on("message", async (message) => {
         vix50previousQuote,
         tick,
         tickquote,
-        0.02863,
+        0.03063,
         vix50BuyCount,
         vix50HasbuyCount
       );
@@ -267,7 +268,7 @@ connection.on("message", async (message) => {
         vix75spreviousQuote,
         tick,
         tickquote,
-        0.03036,
+        0.03249,
         vix75sBuyCount,
         vix75sHasbuyCount
       );
@@ -277,7 +278,7 @@ connection.on("message", async (message) => {
         vix75previousQuote,
         tick,
         tickquote,
-        0.04294,
+        0.04594,
         vix75BuyCount,
         vix75HasbuyCount
       );
@@ -427,7 +428,7 @@ const buyContract = async (symbolValue) => {
 
   const newPropsal = {
     ...proposal_request,
-    amount: buyPrice,
+    amount: random.value,
     symbol: symbolValue,
   };
 
@@ -446,10 +447,11 @@ const buyContract = async (symbolValue) => {
 
     times.times++;
     console.log("times ", times.times);
-    if (times.times==22)
+    if (times.times==50)
       {
         times.times=0
         console.log("Starting back at one")
+        connection.close(1000, 'Closing connection normally');
       }
     
      
@@ -561,3 +563,5 @@ const quotesFunction = async (
 };
 
 getProposal();
+// Call getProposale every 30 minutes
+setInterval(getProposal , 5 * 60 * 1000);
