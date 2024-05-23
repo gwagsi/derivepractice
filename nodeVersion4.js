@@ -424,7 +424,7 @@ const user_accounts = [
 const buyContract = async (symbolValue) => {
   // hasOpenContract.value = true;
   // console.log(" times", times.times);
-  let buyPrice = (parseFloat(Math.pow(1.02, times.times)*1 ).toFixed(2));
+  let buyPrice = (parseFloat(Math.pow(1.01, times.times)*1 ).toFixed(2));
 
   const newPropsal = {
     ...proposal_request,
