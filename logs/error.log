@@ -1351,3 +1351,64 @@
     at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
     at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
 2025-05-19 12:55:48 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 13:24:06 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 13:26:01 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 13:26:01 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 13:26:03 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 13:26:03 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 13:26:04 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 13:26:06 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 13:26:51 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 13:26:54 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 13:26:54 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 13:26:55 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 13:26:57 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 13:26:57 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 13:26:59 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 13:26:59 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 13:26:59 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 13:26:59 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 13:26:59 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 13:27:01 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 13:27:01 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 13:27:01 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 13:27:01 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 13:27:01 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 13:27:02 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 13:27:02 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 13:27:02 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 13:27:02 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 13:27:02 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 13:27:02 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 13:27:04 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 13:27:04 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 13:27:06 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 13:27:06 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 13:27:06 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 13:27:06 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 13:27:06 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 13:27:54 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 13:27:54 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 13:27:56 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 13:27:57 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 13:27:57 [[31merror[39m]: Attempt 2 failed for R_50: undefined
+2025-05-19 13:27:59 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 13:28:01 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Attempt 3 failed for R_50: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Max retries reached for R_50
+2025-05-19 13:28:01 [[31merror[39m]: Critical failure for R_50: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Symbol R_50 failed: undefined
+2025-05-19 13:28:01 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 13:28:02 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 13:28:03 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 13:28:03 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 13:28:03 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 13:28:03 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 13:28:04 [[31merror[39m]: Attempt 1 failed for 1HZ10V: undefined
+2025-05-19 13:28:04 [[31merror[39m]: Attempt 2 failed for 1HZ75V: undefined
+2025-05-19 13:28:04 [[31merror[39m]: Attempt 2 failed for R_75: undefined
+2025-05-19 13:28:06 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
+2025-05-19 13:39:36 [[31merror[39m]: WebSocket error: 

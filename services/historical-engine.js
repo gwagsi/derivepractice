@@ -7,23 +7,100 @@ const constants = require("../config/constants");
 // Fix: Import pLimit correctly
 const pLimit = require("p-limit").default;
 
+// Add a RateLimiter class to manage API requests
+class RateLimiter {
+  constructor(maxRequestsPerMinute, maxRequestsPerHour) {
+    this.maxRequestsPerMinute = maxRequestsPerMinute;
+    this.maxRequestsPerHour = maxRequestsPerHour;
+    this.minuteRequests = [];
+    this.hourRequests = [];
+  }
+
+  async waitForQuota() {
+    const now = Date.now();
+
+    // Remove requests older than 1 minute
+    this.minuteRequests = this.minuteRequests.filter(
+      (time) => now - time < 60000
+    );
+
+    // Remove requests older than 1 hour
+    this.hourRequests = this.hourRequests.filter(
+      (time) => now - time < 3600000
+    );
+
+    // Check if we're at the minute limit
+    if (this.minuteRequests.length >= this.maxRequestsPerMinute) {
+      // Calculate time to wait until the oldest request is out of the window
+      const oldestMinuteRequest = this.minuteRequests[0];
+      const timeToWaitMinute = 60000 - (now - oldestMinuteRequest) + 50; // Add 50ms buffer
+
+      logger.debug(
+        `Rate limit reached for minute, waiting ${timeToWaitMinute}ms`
+      );
+      await sleep(timeToWaitMinute);
+      return this.waitForQuota(); // Recursive call to check again after waiting
+    }
+
+    // Check if we're at the hour limit
+    if (this.hourRequests.length >= this.maxRequestsPerHour) {
+      // Calculate time to wait until the oldest request is out of the window
+      const oldestHourRequest = this.hourRequests[0];
+      const timeToWaitHour = 3600000 - (now - oldestHourRequest) + 50; // Add 50ms buffer
+
+      logger.debug(`Rate limit reached for hour, waiting ${timeToWaitHour}ms`);
+      await sleep(timeToWaitHour);
+      return this.waitForQuota(); // Recursive call to check again after waiting
+    }
+
+    // Add the current request to both windows
+    this.minuteRequests.push(now);
+    this.hourRequests.push(now);
+  }
+
+  // Method to track a request that was just made
+  trackRequest() {
+    const now = Date.now();
+    this.minuteRequests.push(now);
+    this.hourRequests.push(now);
+  }
+
+  // Get remaining quota information for monitoring
+  getRemainingQuota() {
+    const now = Date.now();
+
+    // Clean up expired timestamps first
+    this.minuteRequests = this.minuteRequests.filter(
+      (time) => now - time < 60000
+    );
+    this.hourRequests = this.hourRequests.filter(
+      (time) => now - time < 3600000
+    );
+
+    return {
+      minuteRemaining: this.maxRequestsPerMinute - this.minuteRequests.length,
+      hourRemaining: this.maxRequestsPerHour - this.hourRequests.length,
+    };
+  }
+}
+
 class HistoricalDataEngine {
   constructor() {
     this.MAX_RETRIES = 3;
     this.BATCH_SIZE = 5000; // Max allowed by API
-    this.DELAY_BETWEEN_REQUESTS = 0; // 1 second
-    this.MIN_DELAY = 0; // Minimum delay between requests
-    this.MAX_DELAY = 50; // Maximum delay cap
+    this.MIN_DELAY = 100; // Minimum delay between requests (ms)
+    this.MAX_DELAY = 1000; // Maximum delay cap (ms)
     this.api = null;
     this.metrics = {
-      // Initialize metrics object
       requests: 0,
       inserts: 0,
       startTime: Date.now(),
     };
 
-    this.symbolConcurrency = 3;
-    // Initialize currentBatchSize in constructor
+    // Create a rate limiter for general requests (220/min, 14400/hour)
+    this.rateLimiter = new RateLimiter(75, 3500); // Set slightly below limits to be safe
+
+    this.symbolConcurrency = 2; // Reduced from 3 to avoid rate limit issues
     this.currentBatchSize = this.BATCH_SIZE;
 
     this.isProcessing = false;
@@ -41,6 +118,7 @@ class HistoricalDataEngine {
   setApi(api) {
     this.api = api;
   }
+
   async fetchHistoricalTicks(symbol) {
     try {
       const oneYearAgo = Math.floor(Date.now() / 1000) - 31536000; // 365 days
@@ -52,10 +130,13 @@ class HistoricalDataEngine {
       // Initialize adaptive batch sizing
       let currentBatchSize = this.BATCH_SIZE;
       const batchQueue = [];
-      const MAX_CONCURRENT_BATCHES = 3;
+      const MAX_CONCURRENT_BATCHES = 2; // Reduced from 3 to avoid memory issues
 
       while (hasMoreData && attempts < this.MAX_RETRIES) {
         try {
+          // Wait for rate limit quota before making a request
+          await this.rateLimiter.waitForQuota();
+
           const requestStart = Date.now();
 
           // Fetch batch with current parameters
@@ -68,10 +149,25 @@ class HistoricalDataEngine {
             end: endTime,
           });
 
+          // Track the request in rate limiter and metrics
+          this.rateLimiter.trackRequest();
           this.metrics.requests++;
+
           const requestDuration = Date.now() - requestStart;
 
+          // Log rate limit information
+          const quota = this.rateLimiter.getRemainingQuota();
+          logger.debug(
+            `Rate limit remaining: ${quota.minuteRemaining}/min, ${quota.hourRemaining}/hour`
+          );
+
           if (response.error) {
+            // Check for rate limit errors specifically
+            if (response.error.code === "RateLimit") {
+              logger.warn(`Rate limit hit for ${symbol}, backing off`);
+              await sleep(30000); // 30 second backoff
+              continue; // Retry without incrementing attempt counter
+            }
             throw new Error(`API Error: ${response.error.message}`);
           }
 
@@ -111,10 +207,16 @@ class HistoricalDataEngine {
           // Reset attempts after successful request
           attempts = 0;
 
-          // Adaptive delay based on API response time
-          const delay = Math.max(this.MIN_DELAY, this.MAX_DELAY);
+          // Adaptive delay based on API response time and remaining quota
+          // The closer we are to the rate limit, the longer we'll wait
+          const quotaPercentage =
+            quota.minuteRemaining / this.rateLimiter.maxRequestsPerMinute;
+          const adaptiveDelay = Math.max(
+            this.MIN_DELAY,
+            this.MAX_DELAY * (1 - quotaPercentage)
+          );
 
-          await sleep(delay);
+          await sleep(adaptiveDelay);
         } catch (error) {
           console.log(error);
           logger.error(
@@ -149,7 +251,7 @@ class HistoricalDataEngine {
     }
   }
 
-  // Updated combineTickData with memory optimization
+  // Rest of the methods remain the same
   combineTickData(history) {
     if (!history?.times?.length || !history?.prices?.length) return [];
 
@@ -224,6 +326,7 @@ class HistoricalDataEngine {
       )
     );
   }
+
   async fetchAllSymbolsHistory() {
     // If already processing, don't start again
     if (this.isProcessing) {
@@ -244,6 +347,11 @@ class HistoricalDataEngine {
       startTime: new Date(),
       endTime: null,
       errors: [],
+      rateLimitInfo: {
+        // Add rate limit tracking to progress
+        minuteQuota: 0,
+        hourQuota: 0,
+      },
     };
 
     // Start process in background
@@ -278,8 +386,15 @@ class HistoricalDataEngine {
                 (this.processingProgress.completed / total) * 100
               );
 
+              // Update rate limit info in progress
+              const quota = this.rateLimiter.getRemainingQuota();
+              this.processingProgress.rateLimitInfo = {
+                minuteQuota: quota.minuteRemaining,
+                hourQuota: quota.hourRemaining,
+              };
+
               logger.info(
-                `Progress: ${this.processingProgress.completed}/${total} (${this.processingProgress.percentage}%)`
+                `Progress: ${this.processingProgress.completed}/${total} (${this.processingProgress.percentage}%) [Rate limits: ${quota.minuteRemaining}/min, ${quota.hourRemaining}/hour]`
               );
             } catch (e) {
               logger.error(`Symbol ${symbol} failed: ${e.message}`);
@@ -309,8 +424,17 @@ class HistoricalDataEngine {
     }
   }
 
-  // Add a method to get current status
+  // Get current status with rate limit info
   getProcessingStatus() {
+    if (this.isProcessing) {
+      // Update rate limit info before returning
+      const quota = this.rateLimiter.getRemainingQuota();
+      this.processingProgress.rateLimitInfo = {
+        minuteQuota: quota.minuteRemaining,
+        hourQuota: quota.hourRemaining,
+      };
+    }
+
     return {
       isProcessing: this.isProcessing,
       progress: this.processingProgress,
