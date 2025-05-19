@@ -3689,3 +3689,10 @@
 2025-05-19 11:16:31 [[32minfo[39m]: Starting background historical data fetch
 2025-05-19 11:16:39 [[32minfo[39m]: POST /fetch-history
 2025-05-19 11:16:48 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:18:15 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:18:15 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:18:15 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:22:06 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:22:06 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:22:07 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:22:17 [[32minfo[39m]: Shutting down gracefully...

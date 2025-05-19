@@ -14,8 +14,8 @@ class HistoricalDataEngine {
     this.MAX_RETRIES = 3;
     this.BATCH_SIZE = 5000; // Max allowed by API
     this.DELAY_BETWEEN_REQUESTS = 0; // 1 second
-    this.MIN_DELAY = 50; // Minimum delay between requests
-    this.MAX_DELAY = 3000; // Maximum delay cap
+    this.MIN_DELAY = 0; // Minimum delay between requests
+    this.MAX_DELAY = 50; // Maximum delay cap
     this.metrics = {
       // Initialize metrics object
       requests: 0,
@@ -68,9 +68,6 @@ class HistoricalDataEngine {
           this.metrics.requests++;
           const requestDuration = Date.now() - requestStart;
 
-          // Adjust batch size dynamically
-          currentBatchSize = this.calculateAdaptiveBatchSize(requestDuration);
-
           if (response.error) {
             throw new Error(`API Error: ${response.error.message}`);
           }
@@ -112,10 +109,7 @@ class HistoricalDataEngine {
           attempts = 0;
 
           // Adaptive delay based on API response time
-          const delay = Math.max(
-            this.MIN_DELAY,
-            Math.min(requestDuration * 0.5, this.MAX_DELAY)
-          );
+          const delay = Math.max(this.MIN_DELAY, this.MAX_DELAY);
 
           await sleep(delay);
         } catch (error) {
@@ -152,26 +146,6 @@ class HistoricalDataEngine {
     }
   }
 
-  calculateAdaptiveBatchSize(requestDuration) {
-    const responseThreshold = 1000;
-    const maxBatchSize = 5000;
-    const minBatchSize = 1000;
-    const adjustmentStep = 500;
-
-    if (requestDuration < responseThreshold) {
-      this.currentBatchSize = Math.min(
-        maxBatchSize,
-        this.currentBatchSize + adjustmentStep
-      );
-    } else {
-      this.currentBatchSize = Math.max(
-        minBatchSize,
-        this.currentBatchSize - adjustmentStep
-      );
-    }
-
-    return this.currentBatchSize;
-  }
   // Updated combineTickData with memory optimization
   combineTickData(history) {
     if (!history?.times?.length || !history?.prices?.length) return [];
