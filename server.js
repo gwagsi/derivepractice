@@ -1,57 +1,50 @@
+require("dotenv").config();
+const app = require("./app");
+const { logger } = require("./utils/logger");
+const tradingEngine = require("./services/trading-engine");
+const derivWebSocket = require("./services/deriv-websocket");
+const historicalEngine = require("./services/historical-engine");
 
-import express from 'express';
-import fs from 'fs';
-import cors from 'cors';
- 
+const { connect } = require("./utils/db");
 
-const app = express();
-app.use(cors());
-const port = process.env.PORT || 3000; // Use environment variable or default to 3000
+const PORT = process.env.PORT || 3000;
 
-app.get('/prices', (req, res) => {
-    console.log('Request received');
-  fs.readFile('prices.json', (err, data) => {
-    if (err) {
-      console.error('Error reading file:', err);
-      res.status(500).send('Error retrieving data');
-    } else {
-        console.log('Data read');
-      
-      try {
-        const prices = JSON.parse(data);
-       const reversePrice = prices.reverse();
-        let percentageDifferences = [];
-        let count = 0;
-     // Iterate over the array, skipping the last value because it has no following value
-for (let i = 1; i < reversePrice.length - 1; i++) {
-    // Calculate the percentage difference between the current value and the one after it
-    let percentageDifference = ((reversePrice[i] - reversePrice[i - 1]) / reversePrice[i + 1]) * 100;
-    const within_limit = Math.abs(percentageDifference) <= 0.02431;
-  
-if (within_limit) {
-    count++;
-    }
-    else {
-        percentageDifferences.unshift(count);
-    count = 0;
-    }
- 
+const server = app.listen(PORT, async () => {
+  logger.info(`Server running on port ${PORT}`);
+  try {
+    await connect();
+  } catch (error) {
+    logger.error(`Failed to connect to database: ${error.message}`);
+    process.exit(1);
+  }
+  //   try {
+  //     await tradingEngine.initialize();
+  //   } catch (error) {
+  //     logger.error(`Failed to initialize trading engine: ${error.message}`);
+  //   }
+});
+
+// Graceful shutdown
+const shutdown = async () => {
+  logger.info("Shutting down gracefully...");
+
+  // Close WebSocket connection
+  if (derivWebSocket.connection) {
+    derivWebSocket.connection.close();
   }
 
-  
-  // Now percentageDifferences contains the percentage differences between each value and the one after it, starting from the last value
-  console.log(percentageDifferences);
-  
-
-        res.status(200).json(percentageDifferences); // Send the price data as JSON
-      } catch (error) {
-        console.error('Error parsing JSON:', error);
-        res.status(400).send('Invalid data format');
-      }
-    }
+  // Close HTTP server
+  server.close(() => {
+    logger.info("HTTP server closed");
+    process.exit(0);
   });
-});
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+  // Force close after timeout
+  setTimeout(() => {
+    logger.error("Forcing shutdown after timeout");
+    process.exit(1);
+  }, 10000);
+};
+
+process.on("SIGTERM", shutdown);
+process.on("SIGINT", shutdown);

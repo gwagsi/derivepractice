@@ -1,0 +1,257 @@
+2025-05-18 23:39:59 [[31merror[39m]: Initialization failed: No user accounts found.
+2025-05-18 23:41:15 [[31merror[39m]: Initialization failed: No user accounts found.
+2025-05-18 23:41:40 [[31merror[39m]: Initialization failed: No user accounts found.
+2025-05-18 23:46:54 [[31merror[39m]: Initialization failed: authorized is not defined
+2025-05-18 23:54:22 [[31merror[39m]: Initialization failed: subscribeToTicks is not defined
+2025-05-18 23:55:33 [[31merror[39m]: Tick subscription failed: retryOperation is not defined
+2025-05-18 23:55:33 [[31merror[39m]: Initialization failed: retryOperation is not defined
+2025-05-18 23:59:13 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:13 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:13 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:14 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:15 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:16 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:16 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:17 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:17 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:18 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:18 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:18 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:18 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:19 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:19 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:19 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:20 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:21 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:21 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:21 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:21 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:22 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:23 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:23 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:23 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:23 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:23 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:24 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:25 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:25 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:25 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:25 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:25 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:26 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:27 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:27 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:27 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:27 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:27 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:28 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:29 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:29 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:29 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:29 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-18 23:59:29 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:43 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:43 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:44 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:45 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:46 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:46 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:47 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:47 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:48 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:48 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:48 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:48 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:49 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:49 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:00:49 [[31merror[39m]: Message handling error: tradingEngine is not defined
+2025-05-19 00:02:16 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:16 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:16 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:17 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:18 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:18 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:19 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:19 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:20 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:20 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:20 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:20 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:21 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:21 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:21 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:22 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:23 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:23 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:23 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:23 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:24 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:25 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:25 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:25 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:25 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:25 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:26 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:27 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:27 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:27 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:27 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:27 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:28 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:29 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:29 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:29 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:29 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:29 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:30 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:31 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:31 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:31 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:31 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:31 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:32 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:33 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:33 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:33 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:33 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:33 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:34 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:35 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:35 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:02:35 [[31merror[39m]: Message handling error: tradingEngine.handleTickUpdate is not a function
+2025-05-19 00:06:42 [[31merror[39m]: Initialization failed: undefined
+2025-05-19 00:15:03 [[31merror[39m]: Initialization failed: undefined
+2025-05-19 00:38:49 [[31merror[39m]: Failed to fetch history for R_100: fs is not defined
+2025-05-19 00:38:49 [[31merror[39m]: Failed to process R_100: fs is not defined
+2025-05-19 00:38:50 [[31merror[39m]: Failed to fetch history for 1HZ100V: fs is not defined
+2025-05-19 00:38:50 [[31merror[39m]: Failed to process 1HZ100V: fs is not defined
+2025-05-19 00:38:50 [[31merror[39m]: Failed to fetch history for R_75: fs is not defined
+2025-05-19 00:38:50 [[31merror[39m]: Failed to process R_75: fs is not defined
+2025-05-19 00:40:13 [[31merror[39m]: Failed to fetch history for R_100: fs is not defined
+2025-05-19 00:40:13 [[31merror[39m]: Failed to process R_100: fs is not defined
+2025-05-19 00:40:13 [[31merror[39m]: Failed to fetch history for 1HZ100V: fs is not defined
+2025-05-19 00:40:13 [[31merror[39m]: Failed to process 1HZ100V: fs is not defined
+2025-05-19 00:40:14 [[31merror[39m]: Failed to fetch history for R_75: fs is not defined
+2025-05-19 00:40:14 [[31merror[39m]: Failed to process R_75: fs is not defined
+2025-05-19 00:42:32 [[31merror[39m]: Failed to fetch history for R_100: sleep is not a function
+2025-05-19 00:42:32 [[31merror[39m]: Failed to process R_100: sleep is not a function
+2025-05-19 00:42:33 [[31merror[39m]: Failed to fetch history for 1HZ100V: sleep is not a function
+2025-05-19 00:42:33 [[31merror[39m]: Failed to process 1HZ100V: sleep is not a function
+2025-05-19 00:42:34 [[31merror[39m]: Failed to fetch history for R_75: sleep is not a function
+2025-05-19 00:42:34 [[31merror[39m]: Failed to process R_75: sleep is not a function
+2025-05-19 00:53:14 [[31merror[39m]: Failed to fetch history for R_100: undefined
+2025-05-19 00:53:14 [[31merror[39m]: Failed to process R_100: undefined
+2025-05-19 00:53:21 [[31merror[39m]: Failed to fetch history for R_100: undefined
+2025-05-19 00:53:21 [[31merror[39m]: Failed to process R_100: undefined
+2025-05-19 00:54:21 [[31merror[39m]: Failed to fetch history for R_100: undefined
+2025-05-19 00:54:21 [[31merror[39m]: Failed to process R_100: undefined
+2025-05-19 01:30:48 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 01:30:53 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 01:30:56 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 01:49:06 [[31merror[39m]: MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017
+2025-05-19 01:55:46 [[31merror[39m]: MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017
+2025-05-19 01:56:27 [[31merror[39m]: MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017
+2025-05-19 01:57:57 [[31merror[39m]: MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017
+2025-05-19 01:58:46 [[31merror[39m]: MongoDB connection error: connect ECONNREFUSED 127.0.0.1:27017
+2025-05-19 02:12:36 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 02:16:59 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 02:25:42 [[31merror[39m]: MongoDB save error: you are over your space quota, using 514 MB of 512 MB
+2025-05-19 02:30:45 [[31merror[39m]: Failed to fetch history for R_100: undefined
+2025-05-19 03:27:34 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 03:29:44 [[31merror[39m]: Forcing shutdown after timeout
