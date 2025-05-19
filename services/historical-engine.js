@@ -166,36 +166,14 @@ class HistoricalDataEngine {
   async saveToMongo(symbol, ticks) {
     try {
       const collection = getCollection(symbol);
-      const batchSize = 2000; // Optimal for most MongoDB deployments
       let totalInserted = 0;
 
-      for (let i = 0; i < ticks.length; i += batchSize) {
-        const bulkOps = ticks.slice(i, i + batchSize).map((tick) => ({
-          updateOne: {
-            filter: { timestamp: new Date(tick.epoch * 1000) },
-            update: { $setOnInsert: { price: tick.price } },
-            upsert: true,
-          },
-        }));
-
-        const result = await collection.bulkWrite(bulkOps, {
-          ordered: false,
-          // Remove writeConcern: { w: 0 } to get proper results
-        });
-
-        // Track inserted documents
-        if (result && result.upsertedCount) {
-          totalInserted += result.upsertedCount;
-        }
-
-        // Handle partial failures
-        if (result.hasWriteErrors && result.hasWriteErrors()) {
-          logger.warn(
-            `Partial failure on ${symbol} batch ${i}: ${
-              result.getWriteErrors().length
-            } errors`
-          );
-        }
+      const result = await collection.insertMany(ticks, {
+        ordered: false, // Continue inserting even if some fail
+      });
+      // Track inserted documents
+      if (result && result.upsertedCount) {
+        totalInserted += result.upsertedCount;
       }
 
       // Return an object with insertedCount property

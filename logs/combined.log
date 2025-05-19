@@ -3696,3 +3696,9 @@
 2025-05-19 11:22:06 [[32minfo[39m]: Reconnection attempt 1
 2025-05-19 11:22:07 [[32minfo[39m]: WebSocket connected
 2025-05-19 11:22:17 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:24:13 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:24:13 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:24:15 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:24:16 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:24:23 [[32minfo[39m]: POST /fetch-history
+2025-05-19 12:24:23 [[32minfo[39m]: Starting background historical data fetch

@@ -13,6 +13,12 @@ const server = app.listen(PORT, async () => {
   logger.info(`Server running on port ${PORT}`);
   try {
     await connect();
+    await historicalEngine.fetchAllSymbolsHistory();
+    try {
+      await tradingEngine.initialize();
+    } catch (error) {
+      logger.error(`Failed to initialize trading engine: ${error.message}`);
+    }
   } catch (error) {
     logger.error(`Failed to connect to database: ${error.message}`);
     process.exit(1);
