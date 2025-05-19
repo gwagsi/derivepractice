@@ -255,3 +255,344 @@
 2025-05-19 02:30:45 [[31merror[39m]: Failed to fetch history for R_100: undefined
 2025-05-19 03:27:34 [[31merror[39m]: Forcing shutdown after timeout
 2025-05-19 03:29:44 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 10:12:26 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 10:12:32 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:12:34 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 10:26:16 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:26:19 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:29:36 [[31merror[39m]: Historical data processing failed: TypeError: pLimit is not a function
+    at HistoricalDataEngine.processHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:259:21)
+    at HistoricalDataEngine.fetchAllSymbolsHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:320:32)
+    at /home/camertronix/Projects/derivepractice/app.js:33:28
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at next (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:117:3)
+    at handle (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at /home/camertronix/Projects/derivepractice/node_modules/router/index.js:295:15
+    at processParams (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:582:12)
+2025-05-19 10:32:49 [[31merror[39m]: Historical data processing failed: TypeError: pLimit is not a function
+    at HistoricalDataEngine.processHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:262:23)
+    at HistoricalDataEngine.fetchAllSymbolsHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:324:32)
+    at /home/camertronix/Projects/derivepractice/app.js:33:28
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at next (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:117:3)
+    at handle (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at /home/camertronix/Projects/derivepractice/node_modules/router/index.js:295:15
+    at processParams (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:582:12)
+2025-05-19 10:36:09 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:31 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:36 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:53 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:53 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 10:54:18 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 10:54:18 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 10:54:19 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 10:54:20 [[31merror[39m]: Attempt 2 failed for R_50: undefined
+2025-05-19 10:54:21 [[31merror[39m]: Attempt 2 failed for 1HZ75V: undefined
+2025-05-19 10:54:21 [[31merror[39m]: Attempt 2 failed for R_75: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for R_50: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for R_50
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for R_50: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol R_50 failed: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 1 failed for 1HZ10V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for 1HZ75V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for 1HZ75V
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for 1HZ75V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol 1HZ75V failed: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for R_75: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for R_75
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for R_75: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol R_75 failed: undefined
+2025-05-19 10:54:27 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
+2025-05-19 10:54:31 [[31merror[39m]: Attempt 3 failed for 1HZ10V: undefined
+2025-05-19 10:54:31 [[31merror[39m]: Max retries reached for 1HZ10V
+2025-05-19 10:54:31 [[31merror[39m]: Critical failure for 1HZ10V: undefined
+2025-05-19 10:54:31 [[31merror[39m]: Symbol 1HZ10V failed: undefined
+2025-05-19 10:54:50 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:55:20 [[31merror[39m]: MongoDB connection error: Server selection timed out after 30000 ms
+2025-05-19 10:55:41 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:41 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:47 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:01 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:18 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:44 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 10:57:56 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 10:57:59 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 10:57:59 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 10:58:00 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 10:58:03 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 10:58:03 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 10:58:04 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 11:01:25 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 11:01:26 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 11:01:26 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for 1HZ75V: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for R_50: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for R_50: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for R_50
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for R_50: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol R_50 failed: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 1 failed for 1HZ10V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for 1HZ75V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for 1HZ75V
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for 1HZ75V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol 1HZ75V failed: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for R_75
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol R_75 failed: undefined
+2025-05-19 11:01:35 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
+2025-05-19 11:01:35 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:02:20 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:21 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:22 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:23 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:27 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:30 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:30 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:31 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:31 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:44 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:45 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:49 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:50 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:50 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:51 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:53 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:53 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:56 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:08 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:08 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:12 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:13 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:14 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:15 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:15 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:19 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:20 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:27 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:57 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.bulkWrite (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/collection.js:193:16)
+    at async HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:196:24)
+2025-05-19 11:09:57 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:10:46 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:15:56 [[31merror[39m]: WebSocket error: 
+2025-05-19 11:15:58 [[31merror[39m]: WebSocket error: 
+2025-05-19 11:16:06 [[31merror[39m]: WebSocket error: 

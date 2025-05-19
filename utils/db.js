@@ -13,8 +13,11 @@ async function connect() {
     client = new MongoClient(MONGO_URI, {
       serverApi: {
         version: ServerApiVersion.v1,
-        strict: true,
+        strict: false,
         deprecationErrors: true,
+        maxPoolSize: 15,
+        ignoreUndefined: true,
+        useUnifiedTopology: true,
       },
     });
 

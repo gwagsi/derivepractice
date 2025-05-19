@@ -3106,3 +3106,586 @@
 2025-05-19 03:50:15 [[32minfo[39m]: Inserted 5000 ticks for R_10
 2025-05-19 03:50:17 [[32minfo[39m]: Inserted 5000 ticks for R_10
 2025-05-19 04:04:44 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:04:57 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:04:58 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:04:59 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:05:00 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:05:06 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:05:06 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:06:47 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:06:47 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:06:49 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:06:51 [[32minfo[39m]: Inserted 0 ticks for 1HZ25V
+2025-05-19 10:06:52 [[32minfo[39m]: Inserted 0 ticks for 1HZ50V
+2025-05-19 10:06:53 [[32minfo[39m]: Inserted 0 ticks for 1HZ10V
+2025-05-19 10:07:01 [[32minfo[39m]: Inserted 0 ticks for R_10
+2025-05-19 10:07:01 [[32minfo[39m]: Inserted 0 ticks for R_50
+2025-05-19 10:07:01 [[32minfo[39m]: Inserted 0 ticks for R_25
+2025-05-19 10:07:03 [[32minfo[39m]: Inserted 0 ticks for 1HZ75V
+2025-05-19 10:07:03 [[32minfo[39m]: Inserted 0 ticks for R_75
+2025-05-19 10:07:03 [[32minfo[39m]: Inserted 0 ticks for 1HZ100V
+2025-05-19 10:07:04 [[32minfo[39m]: Inserted 0 ticks for R_100
+2025-05-19 10:08:44 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:08:44 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:08:45 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:10:25 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:10:25 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:10:26 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:10:37 [[32minfo[39m]: Inserted 0 ticks for 1HZ25V
+2025-05-19 10:10:38 [[32minfo[39m]: Inserted 0 ticks for 1HZ50V
+2025-05-19 10:10:54 [[32minfo[39m]: Inserted 0 ticks for R_25
+2025-05-19 10:11:01 [[32minfo[39m]: Inserted 0 ticks for 1HZ10V
+2025-05-19 10:11:08 [[32minfo[39m]: Inserted 0 ticks for 1HZ75V
+2025-05-19 10:11:10 [[32minfo[39m]: Inserted 0 ticks for R_10
+2025-05-19 10:11:11 [[32minfo[39m]: Inserted 0 ticks for 1HZ100V
+2025-05-19 10:11:12 [[32minfo[39m]: Inserted 0 ticks for R_50
+2025-05-19 10:11:17 [[32minfo[39m]: Inserted 0 ticks for R_100
+2025-05-19 10:11:19 [[32minfo[39m]: Inserted 0 ticks for R_75
+2025-05-19 10:12:24 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:12:24 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:12:24 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:12:25 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:12:25 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:12:26 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:12:26 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:12:26 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:12:26 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 10:12:26 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:12:26 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:12:31 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:12:32 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:12:32 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:12:34 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 10:25:58 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:26:16 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:26:16 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:26:16 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:26:19 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:26:19 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:26:23 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:26:24 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:26:27 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:26:29 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:26:56 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:26:56 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:28:08 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:28:08 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:28:09 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:29:27 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:29:29 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:29:30 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:29:31 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:29:32 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:29:36 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:29:36 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:29:36 [[31merror[39m]: Historical data processing failed: TypeError: pLimit is not a function
+    at HistoricalDataEngine.processHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:259:21)
+    at HistoricalDataEngine.fetchAllSymbolsHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:320:32)
+    at /home/camertronix/Projects/derivepractice/app.js:33:28
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at next (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:117:3)
+    at handle (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at /home/camertronix/Projects/derivepractice/node_modules/router/index.js:295:15
+    at processParams (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:582:12)
+2025-05-19 10:31:11 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:31:11 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:31:13 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:32:41 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:32:43 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:32:44 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:32:46 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:32:46 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:32:49 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:32:49 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:32:49 [[31merror[39m]: Historical data processing failed: TypeError: pLimit is not a function
+    at HistoricalDataEngine.processHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:262:23)
+    at HistoricalDataEngine.fetchAllSymbolsHistory (/home/camertronix/Projects/derivepractice/services/historical-engine.js:324:32)
+    at /home/camertronix/Projects/derivepractice/app.js:33:28
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at next (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/camertronix/Projects/derivepractice/node_modules/router/lib/route.js:117:3)
+    at handle (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/camertronix/Projects/derivepractice/node_modules/router/lib/layer.js:152:17)
+    at /home/camertronix/Projects/derivepractice/node_modules/router/index.js:295:15
+    at processParams (/home/camertronix/Projects/derivepractice/node_modules/router/index.js:582:12)
+2025-05-19 10:34:26 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:34:26 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:34:26 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:36:07 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:36:07 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:36:09 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:36:09 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:36:14 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:36:16 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:37:55 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:37:55 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:37:56 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:38:26 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:38:28 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:38:29 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:38:30 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:38:32 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:38:33 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:38:33 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:40:10 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:40:10 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:40:11 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:41:51 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:41:51 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:41:52 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:43:32 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:43:32 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:43:32 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:44:49 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:46:23 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:46:24 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:46:25 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:46:26 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:46:28 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:46:28 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:47:23 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:47:25 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:47:26 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:47:27 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:47:27 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:47:30 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:47:30 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:48:06 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:48:34 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:48:35 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:48:36 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:48:37 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:50:16 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:50:16 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:50:17 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:51:45 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:51:47 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:51:48 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:51:49 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:51:49 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:51:53 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:51:53 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:53:30 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:53:30 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:53:31 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:31 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:53:36 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:53:36 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:36 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:53:41 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:53:43 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:53:53 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:53 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:53:53 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:53:53 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:53:53 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:53:57 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:53:58 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:53:59 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:54:05 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:54:05 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:54:05 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 10:54:08 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 10:54:10 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 10:54:12 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 10:54:12 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 10:54:14 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 10:54:18 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 10:54:18 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 10:54:18 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 10:54:19 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 10:54:19 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 10:54:20 [[31merror[39m]: Attempt 2 failed for R_50: undefined
+2025-05-19 10:54:21 [[31merror[39m]: Attempt 2 failed for 1HZ75V: undefined
+2025-05-19 10:54:21 [[31merror[39m]: Attempt 2 failed for R_75: undefined
+2025-05-19 10:54:24 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for R_50: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for R_50
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for R_50: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol R_50 failed: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 1 failed for 1HZ10V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for 1HZ75V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for 1HZ75V
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for 1HZ75V: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol 1HZ75V failed: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Attempt 3 failed for R_75: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Max retries reached for R_75
+2025-05-19 10:54:25 [[31merror[39m]: Critical failure for R_75: undefined
+2025-05-19 10:54:25 [[31merror[39m]: Symbol R_75 failed: undefined
+2025-05-19 10:54:26 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:54:27 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
+2025-05-19 10:54:28 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:54:28 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:54:31 [[31merror[39m]: Attempt 3 failed for 1HZ10V: undefined
+2025-05-19 10:54:31 [[31merror[39m]: Max retries reached for 1HZ10V
+2025-05-19 10:54:31 [[31merror[39m]: Critical failure for 1HZ10V: undefined
+2025-05-19 10:54:31 [[31merror[39m]: Symbol 1HZ10V failed: undefined
+2025-05-19 10:54:47 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:54:50 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:54:50 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:54:51 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:55:12 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:55:13 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:55:20 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:55:20 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:55:20 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:55:20 [[31merror[39m]: MongoDB connection error: Server selection timed out after 30000 ms
+2025-05-19 10:55:35 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:55:41 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:41 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:55:41 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:55:41 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:41 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:55:46 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:55:47 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:55:47 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:55:47 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:55:57 [[32minfo[39m]: Reconnection attempt 3
+2025-05-19 10:56:01 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:01 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:56:16 [[32minfo[39m]: Reconnection attempt 4
+2025-05-19 10:56:18 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:18 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:56:38 [[32minfo[39m]: Reconnection attempt 5
+2025-05-19 10:56:44 [[31merror[39m]: WebSocket error: 
+2025-05-19 10:56:44 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:57:09 [[32minfo[39m]: Reconnection attempt 6
+2025-05-19 10:57:10 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:57:11 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:57:42 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:57:44 [[32minfo[39m]: Server running on port 3000
+2025-05-19 10:57:44 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:57:46 [[32minfo[39m]: Trading engine initialized
+2025-05-19 10:57:46 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 10:57:51 [[32minfo[39m]: POST /fetch-history
+2025-05-19 10:57:51 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 10:57:51 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 10:57:53 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 10:57:54 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:57:54 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:57:54 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:57:55 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:57:56 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:57:56 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:57:56 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 10:57:56 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 10:57:56 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
+2025-05-19 10:57:56 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 10:57:57 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 10:57:57 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 10:57:59 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 10:57:59 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 10:58:00 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 10:58:01 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 10:58:02 [[32minfo[39m]: WebSocket connected
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 10:58:03 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 10:58:03 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 10:58:03 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 10:58:04 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 10:58:04 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:01:08 [[32minfo[39m]: Server running on port 3000
+2025-05-19 11:01:09 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:01:10 [[32minfo[39m]: Trading engine initialized
+2025-05-19 11:01:11 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 11:01:13 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:01:13 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for R_10: undefined
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for 1HZ100V: undefined
+2025-05-19 11:01:13 [[31merror[39m]: Attempt 1 failed for R_100: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for R_100: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for 1HZ100V: undefined
+2025-05-19 11:01:15 [[31merror[39m]: Attempt 2 failed for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for R_100: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for R_100
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for R_100: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol R_100 failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for 1HZ25V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for 1HZ100V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for 1HZ100V
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for 1HZ100V: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol 1HZ100V failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for R_25: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 3 failed for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Max retries reached for R_10
+2025-05-19 11:01:19 [[31merror[39m]: Critical failure for R_10: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Symbol R_10 failed: undefined
+2025-05-19 11:01:19 [[31merror[39m]: Attempt 1 failed for 1HZ50V: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for 1HZ25V: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for R_25: undefined
+2025-05-19 11:01:21 [[31merror[39m]: Attempt 2 failed for 1HZ50V: undefined
+2025-05-19 11:01:25 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 11:01:25 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:01:25 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:01:25 [[31merror[39m]: Attempt 3 failed for 1HZ25V: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Max retries reached for 1HZ25V
+2025-05-19 11:01:25 [[31merror[39m]: Critical failure for 1HZ25V: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Symbol 1HZ25V failed: undefined
+2025-05-19 11:01:25 [[31merror[39m]: Attempt 1 failed for R_50: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 3 failed for R_25: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Max retries reached for R_25
+2025-05-19 11:01:26 [[31merror[39m]: Critical failure for R_25: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Symbol R_25 failed: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 1 failed for 1HZ75V: undefined
+2025-05-19 11:01:26 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 3 failed for 1HZ50V: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Max retries reached for 1HZ50V
+2025-05-19 11:01:26 [[31merror[39m]: Critical failure for 1HZ50V: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Symbol 1HZ50V failed: undefined
+2025-05-19 11:01:26 [[31merror[39m]: Attempt 1 failed for R_75: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for 1HZ75V: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for R_50: undefined
+2025-05-19 11:01:28 [[31merror[39m]: Attempt 2 failed for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for R_50: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for R_50
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for R_50: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol R_50 failed: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 1 failed for 1HZ10V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for 1HZ75V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for 1HZ75V
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for 1HZ75V: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol 1HZ75V failed: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Attempt 3 failed for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Max retries reached for R_75
+2025-05-19 11:01:32 [[31merror[39m]: Critical failure for R_75: undefined
+2025-05-19 11:01:32 [[31merror[39m]: Symbol R_75 failed: undefined
+2025-05-19 11:01:35 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
+2025-05-19 11:01:35 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:02:06 [[32minfo[39m]: Server running on port 3000
+2025-05-19 11:02:07 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:02:09 [[32minfo[39m]: Trading engine initialized
+2025-05-19 11:02:09 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 11:02:12 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:02:12 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 11:02:20 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:21 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:22 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:23 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:27 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:30 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:30 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:31 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:31 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:44 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:45 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:49 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:50 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:50 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:51 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:53 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:53 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:02:56 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:08 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:08 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:12 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:13 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:14 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:15 [[31merror[39m]: Save failed for 1HZ100V: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:15 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:17 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 11:03:17 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:03:17 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:03:18 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:03:19 [[31merror[39m]: Save failed for R_100: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:20 [[31merror[39m]: Save failed for R_10: Cannot read properties of undefined (reading 'insertedCount')
+2025-05-19 11:03:27 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:05:35 [[32minfo[39m]: Server running on port 3000
+2025-05-19 11:05:35 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:05:36 [[32minfo[39m]: Trading engine initialized
+2025-05-19 11:05:37 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 11:05:39 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:05:39 [[32minfo[39m]: Fetching historical data for all symbols...
+2025-05-19 11:07:23 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:07:23 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:07:23 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_100: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for 1HZ100V: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:56 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+2025-05-19 11:09:56 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:09:57 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async Collection.bulkWrite (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/collection.js:193:16)
+    at async HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:196:24)
+2025-05-19 11:09:57 [[31merror[39m]: Save failed for R_10: getaddrinfo EAI_AGAIN ac-nflwrj8-shard-00-00.u8sisz3.mongodb.net
+2025-05-19 11:10:36 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 11:10:37 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 11:10:46 [[31merror[39m]: Forcing shutdown after timeout
+2025-05-19 11:15:45 [[32minfo[39m]: Server running on port 3000
+2025-05-19 11:15:56 [[31merror[39m]: WebSocket error: 
+2025-05-19 11:15:56 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:15:56 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 11:15:58 [[31merror[39m]: WebSocket error: 
+2025-05-19 11:15:58 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:16:03 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 11:16:06 [[31merror[39m]: WebSocket error: 
+2025-05-19 11:16:06 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 11:16:16 [[32minfo[39m]: Reconnection attempt 3
+2025-05-19 11:16:17 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:16:18 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 11:16:23 [[32minfo[39m]: Server running on port 3000
+2025-05-19 11:16:24 [[32minfo[39m]: WebSocket connected
+2025-05-19 11:16:25 [[32minfo[39m]: Trading engine initialized
+2025-05-19 11:16:25 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 11:16:31 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:16:31 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 11:16:39 [[32minfo[39m]: POST /fetch-history
+2025-05-19 11:16:48 [[32minfo[39m]: POST /fetch-history
