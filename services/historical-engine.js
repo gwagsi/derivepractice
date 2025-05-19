@@ -15,7 +15,7 @@ class HistoricalDataEngine {
 
   async fetchHistoricalTicks(symbol) {
     try {
-      const oneYearAgo = Math.floor(Date.now() / 1000) - 35536000; // 1 year in seconds
+      const oneYearAgo = Math.floor(Date.now() / 1000) - 31536000; // 1 year in seconds
       let endTime = "latest";
 
       let attempts = 0;
@@ -34,7 +34,7 @@ class HistoricalDataEngine {
         if (response.error) {
           logger.error(`API Error: ${response.error.message}`);
           attempts++;
-          await sleep(this.DELAY_BETWEEN_REQUESTS * attempts);
+          await sleep(1000 * attempts);
           continue;
         }
 
@@ -45,7 +45,7 @@ class HistoricalDataEngine {
         if (newTicks.length > 0) {
           // Set next end time to the earliest received timestamp - 1 second
           endTime = newTicks[0].epoch - 1;
-          this.saveToMongo(symbol, newTicks);
+          await this.saveToMongo(symbol, newTicks);
 
           // Check if we've reached our history limit
           if (newTicks[0].epoch <= oneYearAgo) {
