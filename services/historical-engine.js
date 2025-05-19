@@ -1,6 +1,4 @@
 const { logger } = require("../utils/logger");
-const stateManager = require("./state-manager");
-const derivWebSocket = require("./deriv-websocket");
 const { sleep } = require("../utils/helpers");
 const { getCollection } = require("../utils/db");
 
@@ -16,6 +14,7 @@ class HistoricalDataEngine {
     this.DELAY_BETWEEN_REQUESTS = 0; // 1 second
     this.MIN_DELAY = 0; // Minimum delay between requests
     this.MAX_DELAY = 50; // Maximum delay cap
+    this.api = null;
     this.metrics = {
       // Initialize metrics object
       requests: 0,
@@ -38,6 +37,10 @@ class HistoricalDataEngine {
       errors: [],
     };
   }
+
+  setApi(api) {
+    this.api = api;
+  }
   async fetchHistoricalTicks(symbol) {
     try {
       const oneYearAgo = Math.floor(Date.now() / 1000) - 31536000; // 365 days
@@ -56,7 +59,7 @@ class HistoricalDataEngine {
           const requestStart = Date.now();
 
           // Fetch batch with current parameters
-          const response = await derivWebSocket.getApi().basic.ticksHistory({
+          const response = await this.api.ticksHistory({
             ticks_history: symbol,
             style: "ticks",
             adjust_start_time: 1,

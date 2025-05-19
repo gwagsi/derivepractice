@@ -3702,3 +3702,821 @@
 2025-05-19 12:24:16 [[32minfo[39m]: Connected to MongoDB database: deriv2
 2025-05-19 12:24:23 [[32minfo[39m]: POST /fetch-history
 2025-05-19 12:24:23 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 12:29:18 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:29:21 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:29:23 [[31merror[39m]: WebSocket error: 
+2025-05-19 12:29:23 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:29:23 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 12:29:24 [[31merror[39m]: WebSocket error: 
+2025-05-19 12:29:24 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:29:28 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:29:28 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 12:29:29 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 12:29:30 [[31merror[39m]: WebSocket error: 
+2025-05-19 12:29:30 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:29:40 [[32minfo[39m]: Reconnection attempt 3
+2025-05-19 12:29:55 [[31merror[39m]: WebSocket error: 
+2025-05-19 12:29:55 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:30:10 [[32minfo[39m]: Reconnection attempt 4
+2025-05-19 12:30:17 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:30:18 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:30:34 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:34:03 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:34:04 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:34:13 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:34:17 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:35:53 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:35:53 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 12:35:54 [[31merror[39m]: WebSocket error: 
+2025-05-19 12:35:54 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:35:59 [[32minfo[39m]: Reconnection attempt 2
+2025-05-19 12:36:01 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:37:40 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:37:40 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 12:37:41 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:39:21 [[33mwarn[39m]: WebSocket disconnected
+2025-05-19 12:39:21 [[32minfo[39m]: Reconnection attempt 1
+2025-05-19 12:39:22 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:40:31 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:41:20 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:41:21 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:41:23 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:41:23 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:41:23 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:42:26 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:42:27 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:42:29 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:42:29 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:44:02 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:44:03 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:46:29 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:46:29 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:51:07 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:51:08 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:51:08 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 12:51:09 [[31merror[39m]: Critical save error for R_10: Error: Database not initialized
+    at getCollection (/home/camertronix/Projects/derivepractice/utils/db.js:35:18)
+    at HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:171:26)
+    at HistoricalDataEngine.fetchHistoricalTicks (/home/camertronix/Projects/derivepractice/services/historical-engine.js:86:38)
+    at async /home/camertronix/Projects/derivepractice/services/historical-engine.js:275:15
+2025-05-19 12:51:09 [[31merror[39m]: Save failed for R_10: Database not initialized
+2025-05-19 12:51:09 [[31merror[39m]: Critical save error for 1HZ100V: Error: Database not initialized
+    at getCollection (/home/camertronix/Projects/derivepractice/utils/db.js:35:18)
+    at HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:171:26)
+    at HistoricalDataEngine.fetchHistoricalTicks (/home/camertronix/Projects/derivepractice/services/historical-engine.js:86:38)
+    at async /home/camertronix/Projects/derivepractice/services/historical-engine.js:275:15
+2025-05-19 12:51:09 [[31merror[39m]: Save failed for 1HZ100V: Database not initialized
+2025-05-19 12:51:09 [[31merror[39m]: Critical save error for R_100: Error: Database not initialized
+    at getCollection (/home/camertronix/Projects/derivepractice/utils/db.js:35:18)
+    at HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:171:26)
+    at HistoricalDataEngine.fetchHistoricalTicks (/home/camertronix/Projects/derivepractice/services/historical-engine.js:86:38)
+    at async /home/camertronix/Projects/derivepractice/services/historical-engine.js:275:15
+2025-05-19 12:51:09 [[31merror[39m]: Save failed for R_100: Database not initialized
+2025-05-19 12:51:10 [[31merror[39m]: Critical save error for R_10: Error: Database not initialized
+    at getCollection (/home/camertronix/Projects/derivepractice/utils/db.js:35:18)
+    at HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:171:26)
+    at HistoricalDataEngine.fetchHistoricalTicks (/home/camertronix/Projects/derivepractice/services/historical-engine.js:86:38)
+    at async /home/camertronix/Projects/derivepractice/services/historical-engine.js:275:15
+2025-05-19 12:51:10 [[31merror[39m]: Save failed for R_10: Database not initialized
+2025-05-19 12:51:10 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:51:10 [[31merror[39m]: Critical save error for 1HZ100V: Error: Database not initialized
+    at getCollection (/home/camertronix/Projects/derivepractice/utils/db.js:35:18)
+    at HistoricalDataEngine.saveToMongo (/home/camertronix/Projects/derivepractice/services/historical-engine.js:171:26)
+    at HistoricalDataEngine.fetchHistoricalTicks (/home/camertronix/Projects/derivepractice/services/historical-engine.js:86:38)
+    at async /home/camertronix/Projects/derivepractice/services/historical-engine.js:275:15
+2025-05-19 12:51:10 [[31merror[39m]: Save failed for 1HZ100V: Database not initialized
+2025-05-19 12:51:10 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:51:12 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:12 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:13 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:13 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:13 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:13 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:14 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:14 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:14 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:14 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:15 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:15 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:15 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:15 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:15 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:15 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:16 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:16 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:16 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:16 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:16 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:16 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:16 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:16 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:17 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:17 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:18 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:18 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:18 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:18 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:19 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:19 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:19 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:19 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:20 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:20 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:20 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:20 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:20 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:20 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:20 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:20 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:21 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:51:21 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:51:22 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 12:55:30 [[32minfo[39m]: Server running on port 3000
+2025-05-19 12:55:33 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 12:55:33 [[32minfo[39m]: Connected to MongoDB
+2025-05-19 12:55:34 [[32minfo[39m]: WebSocket connected
+2025-05-19 12:55:34 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 12:55:36 [[32minfo[39m]: Trading engine initialized
+2025-05-19 12:55:36 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:36 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:36 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:36 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:37 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:37 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:37 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:37 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:37 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:37 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:37 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:37 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:37 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:37 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:38 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:38 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:38 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:38 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:39 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:39 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:39 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:39 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:40 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:40 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:40 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:40 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:40 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:40 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:41 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:41 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:41 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:41 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:41 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:41 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:41 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:41 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:42 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:42 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:43 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:43 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:43 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:43 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:43 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:43 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:44 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:44 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:44 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:44 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:44 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:44 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:44 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:44 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:45 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:45 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:45 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:45 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:45 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:45 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:46 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:46 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:46 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:46 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:47 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:47 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:47 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:47 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:47 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:47 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:47 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:47 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:48 [[31merror[39m]: Critical save error for 1HZ100V: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:48 [[31merror[39m]: Save failed for 1HZ100V: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:48 [[31merror[39m]: Critical save error for R_10: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:48 [[31merror[39m]: Save failed for R_10: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:48 [[31merror[39m]: Critical save error for R_100: MongoBulkWriteError: you are over your space quota, using 528 MB of 512 MB
+    at executeCommands (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:341:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BulkWriteShimOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:521:16)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+    at async UnorderedBulkOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/bulk/common.js:806:16)
+    at async BulkWriteOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/bulk_write.js:34:16)
+    at async InsertManyOperation.execute (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/insert.js:82:25)
+    at async tryOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:207:20)
+    at async executeOperation (/home/camertronix/Projects/derivepractice/node_modules/mongodb/lib/operations/execute_operation.js:75:16)
+2025-05-19 12:55:48 [[31merror[39m]: Save failed for R_100: you are over your space quota, using 528 MB of 512 MB
+2025-05-19 12:55:49 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 13:20:55 [[32minfo[39m]: Server running on port 3000
+2025-05-19 13:21:03 [[32minfo[39m]: Connected to MongoDB database: deriv2
+2025-05-19 13:21:03 [[32minfo[39m]: Connected to MongoDB
+2025-05-19 13:21:04 [[32minfo[39m]: WebSocket connected
+2025-05-19 13:21:04 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 13:21:07 [[32minfo[39m]: Trading engine initialized

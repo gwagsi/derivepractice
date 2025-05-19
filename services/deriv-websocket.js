@@ -5,12 +5,13 @@ const derivConfig = require("../config/deriv-config");
 const constants = require("../config/constants");
 const tradingEngine = require("./trading-engine");
 
+const historicalDataEngine = require("./historical-engine");
+
 class DerivWebSocket {
   constructor() {
     this.connection = null;
     this.api = null;
     this.reconnectAttempts = 0;
-    this.setupConnection();
   }
 
   setupConnection() {
@@ -34,6 +35,7 @@ class DerivWebSocket {
 
     // Set the API for trading engine to use
     tradingEngine.setApi(this.api.basic);
+    historicalDataEngine.setApi(this.api.basic);
   }
 
   handleOpen() {
@@ -43,6 +45,10 @@ class DerivWebSocket {
     // Initialize the trading engine after connection is established
     tradingEngine.initialize().catch((err) => {
       logger.error(`Failed to initialize trading engine: ${err.message}`);
+    });
+    // start tick history fetching
+    historicalDataEngine.fetchAllSymbolsHistory().catch((err) => {
+      logger.error(`Failed to fetch historical data: ${err.message}`);
     });
   }
 

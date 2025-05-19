@@ -1,9 +1,7 @@
 require("dotenv").config();
 const app = require("./app");
 const { logger } = require("./utils/logger");
-const tradingEngine = require("./services/trading-engine");
 const derivWebSocket = require("./services/deriv-websocket");
-const historicalEngine = require("./services/historical-engine");
 
 const { connect } = require("./utils/db");
 
@@ -13,12 +11,8 @@ const server = app.listen(PORT, async () => {
   logger.info(`Server running on port ${PORT}`);
   try {
     await connect();
-    await historicalEngine.fetchAllSymbolsHistory();
-    try {
-      await tradingEngine.initialize();
-    } catch (error) {
-      logger.error(`Failed to initialize trading engine: ${error.message}`);
-    }
+    logger.info("Connected to MongoDB");
+    derivWebSocket.setupConnection();
   } catch (error) {
     logger.error(`Failed to connect to database: ${error.message}`);
     process.exit(1);
