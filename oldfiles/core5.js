@@ -1,4 +1,4 @@
-import DerivAPI from "@deriv/deriv-api/dist/DerivAPI.js";
+ import DerivAPI from "@deriv/deriv-api/dist/DerivAPI.js";
 import WebSocket from "ws";
 import fs from "fs";
 

@@ -4591,3 +4591,441 @@
 2025-05-19 13:39:37 [[32minfo[39m]: Starting background historical data fetch
 2025-05-19 13:39:39 [[32minfo[39m]: Trading engine initialized
 2025-05-19 13:39:51 [[32minfo[39m]: Shutting down gracefully...
+2025-05-19 21:15:14 [[32minfo[39m]: Server running on port 3000
+2025-05-19 21:15:20 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-19 21:15:20 [[32minfo[39m]: Connected to MongoDB
+2025-05-19 21:15:21 [[32minfo[39m]: WebSocket connected
+2025-05-19 21:15:21 [[32minfo[39m]: Starting background historical data fetch
+2025-05-19 21:15:22 [[32minfo[39m]: Trading engine initialized
+2025-05-19 21:34:30 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 10:30:14 [[32minfo[39m]: Server running on port 3000
+2025-05-20 10:30:19 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 10:30:19 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 10:30:19 [[32minfo[39m]: WebSocket connected
+2025-05-20 10:30:19 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 10:30:19 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 10:30:21 [[32minfo[39m]: Trading engine initialized
+2025-05-20 10:30:31 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 10:30:54 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 10:31:30 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 10:54:40 [[32minfo[39m]: Server running on port 3000
+2025-05-20 10:54:44 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 10:54:44 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 10:54:45 [[32minfo[39m]: WebSocket connected
+2025-05-20 10:54:45 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 10:54:45 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 10:54:46 [[32minfo[39m]: Trading engine initialized
+2025-05-20 10:54:57 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 10:55:19 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 10:55:48 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 10:56:02 [[32minfo[39m]: Server running on port 3000
+2025-05-20 10:56:06 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 10:56:06 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 10:56:07 [[32minfo[39m]: WebSocket connected
+2025-05-20 10:56:07 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 10:56:07 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 10:56:09 [[32minfo[39m]: Trading engine initialized
+2025-05-20 10:56:16 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 10:56:38 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 10:57:49 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 10:57:49 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 10:57:49 [[32minfo[39m]: WebSocket connected
+2025-05-20 10:57:49 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 10:58:06 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 10:58:43 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 10:59:29 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 10:59:29 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 10:59:30 [[32minfo[39m]: WebSocket connected
+2025-05-20 10:59:30 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 10:59:50 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:00:46 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:01:10 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:01:10 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:01:11 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:01:11 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:01:43 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:02:51 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:02:51 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:02:51 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:02:51 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:03:17 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:03:27 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:04:31 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:04:31 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:04:32 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:04:32 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:05:08 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:05:16 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:06:12 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:06:12 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:06:13 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:06:13 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:07:04 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:07:21 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:07:53 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:07:53 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:07:54 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:07:54 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:08:51 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:09:29 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:09:34 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:09:34 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:09:34 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:09:34 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:10:37 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:11:14 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:11:14 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:11:15 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:11:15 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:11:45 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:12:55 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:12:55 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:12:56 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:12:56 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:12:56 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:14:18 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:14:36 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:14:36 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:14:36 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:14:36 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:14:46 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:15:03 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:15:57 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:16:16 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:16:16 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:16:17 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:16:17 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:17:38 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:17:57 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:17:57 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:17:58 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:17:58 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:18:08 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:19:38 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:19:38 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:19:38 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:19:38 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:19:40 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:20:14 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:21:17 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:21:18 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:21:18 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:21:19 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:21:19 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:22:38 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:22:59 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:22:59 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:23:00 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:23:00 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:23:07 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:24:33 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:24:40 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:24:40 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:24:40 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:24:40 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:24:47 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:26:20 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:26:20 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:26:21 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:26:21 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:26:35 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:26:36 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:28:01 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:28:01 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:28:02 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:28:02 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:28:20 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:28:31 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:29:42 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:29:42 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:29:43 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:29:43 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:30:12 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:30:51 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:31:23 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:31:23 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:31:23 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:31:23 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:31:56 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:32:43 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 11:33:03 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 11:33:03 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 11:33:04 [[32minfo[39m]: WebSocket connected
+2025-05-20 11:33:04 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 11:33:49 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 11:33:54 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 14:56:50 [[32minfo[39m]: Server running on port 3000
+2025-05-20 14:56:55 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 14:56:55 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 14:56:55 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ25V
+2025-05-20 14:56:55 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 14:56:55 [[32minfo[39m]: Starting analysis for symbol: 1HZ25V
+2025-05-20 14:57:11 [[32minfo[39m]: Found 32985000 ticks for 1HZ25V
+2025-05-20 14:57:17 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 14:57:58 [[32minfo[39m]: Server running on port 3000
+2025-05-20 14:58:02 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 14:58:02 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 14:58:02 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ25V
+2025-05-20 14:58:02 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 14:58:02 [[32minfo[39m]: Starting analysis for symbol: 1HZ25V
+2025-05-20 14:58:14 [[32minfo[39m]: Found 32985000 ticks for 1HZ25V
+2025-05-20 14:58:47 [[32minfo[39m]: Data range: 2024-08-04T22:49:09.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 20:18:16 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:18:19 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:18:23 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:18:23 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:18:23 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:18:23 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:18:23 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:18:24 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:18:24 [[32minfo[39m]: Starting background historical data fetch
+2025-05-20 20:18:25 [[32minfo[39m]: Trading engine initialized
+2025-05-20 20:18:27 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:31:17 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:31:21 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:31:21 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:31:21 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 20:31:21 [[32minfo[39m]: Processing batch #1 with 5 symbols
+2025-05-20 20:31:21 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:31:21 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:31:21 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 20:31:21 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:31:21 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 20:31:21 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:31:21 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ50V
+2025-05-20 20:31:21 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:31:21 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ100V
+2025-05-20 20:31:21 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:31:21 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:31:21 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 20:31:21 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 20:31:21 [[32minfo[39m]: Starting analysis for symbol: 1HZ50V
+2025-05-20 20:31:21 [[32minfo[39m]: Starting analysis for symbol: 1HZ100V
+2025-05-20 20:31:22 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:31:22 [[32minfo[39m]: Starting background historical data fetch
+2025-05-20 20:31:23 [[32minfo[39m]: Trading engine initialized
+2025-05-20 20:31:40 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 20:31:54 [[32minfo[39m]: Found 14315000 ticks for 1HZ100V
+2025-05-20 20:32:06 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 20:32:14 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:32:37 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:32:42 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:32:42 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:32:42 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 20:32:42 [[32minfo[39m]: Processing batch #1 with 5 symbols
+2025-05-20 20:32:42 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:32:42 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:42 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 20:32:42 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:42 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 20:32:42 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:42 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ50V
+2025-05-20 20:32:42 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:42 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ100V
+2025-05-20 20:32:42 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:42 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:32:42 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 20:32:42 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 20:32:42 [[32minfo[39m]: Starting analysis for symbol: 1HZ50V
+2025-05-20 20:32:42 [[32minfo[39m]: Starting analysis for symbol: 1HZ100V
+2025-05-20 20:32:42 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:32:45 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:32:50 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:32:50 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:32:50 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 20:32:50 [[32minfo[39m]: Processing batch #1 with 5 symbols
+2025-05-20 20:32:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:32:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 20:32:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 20:32:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:50 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ50V
+2025-05-20 20:32:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:50 [[32minfo[39m]: Initializing analysis engine for symbol: 1HZ100V
+2025-05-20 20:32:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:32:50 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:32:50 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 20:32:50 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 20:32:50 [[32minfo[39m]: Starting analysis for symbol: 1HZ50V
+2025-05-20 20:32:50 [[32minfo[39m]: Starting analysis for symbol: 1HZ100V
+2025-05-20 20:32:51 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:32:52 [[32minfo[39m]: Trading engine initialized
+2025-05-20 20:33:04 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 20:33:18 [[32minfo[39m]: Found 14315000 ticks for 1HZ100V
+2025-05-20 20:33:26 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 20:33:45 [[32minfo[39m]: Found 29987108 ticks for R_25
+2025-05-20 20:33:52 [[32minfo[39m]: Found 31970000 ticks for 1HZ50V
+2025-05-20 20:34:06 [[32minfo[39m]: Data range: 2024-07-18T22:37:32.000Z to 2025-05-19T14:26:16.000Z
+2025-05-20 20:34:26 [[32minfo[39m]: Data range: 2024-12-04T21:40:22.000Z to 2025-05-19T14:26:17.000Z
+2025-05-20 20:34:32 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 20:34:32 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 20:34:32 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:35:04 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 20:35:20 [[32minfo[39m]: Analyzed 100 ticks for R_10 at epoch 1721342450
+2025-05-20 20:35:34 [[32minfo[39m]: Analyzed 200 ticks for R_10 at epoch 1721342650
+2025-05-20 20:35:39 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:39:08 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:39:12 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:39:12 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:39:12 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 20:39:12 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 20:39:12 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:39:12 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:39:12 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 20:39:12 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:39:12 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 20:39:12 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:39:12 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:39:12 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 20:39:12 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 20:39:13 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:39:16 [[32minfo[39m]: Trading engine initialized
+2025-05-20 20:39:23 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 20:39:26 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 20:58:26 [[32minfo[39m]: Server running on port 3000
+2025-05-20 20:58:30 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 20:58:30 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 20:58:30 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 20:58:30 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 20:58:30 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 20:58:30 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:58:30 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 20:58:30 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:58:30 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 20:58:30 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 20:58:30 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 20:58:30 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 20:58:30 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 20:58:31 [[32minfo[39m]: WebSocket connected
+2025-05-20 20:58:32 [[32minfo[39m]: Trading engine initialized
+2025-05-20 20:58:44 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 20:59:00 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 20:59:09 [[32minfo[39m]: Found 29987108 ticks for R_25
+2025-05-20 20:59:22 [[32minfo[39m]: Data range: 2024-07-18T22:37:32.000Z to 2025-05-19T14:26:16.000Z
+2025-05-20 21:00:03 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 21:00:12 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 21:00:12 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 21:00:12 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:00:33 [[32minfo[39m]: Data range: 2024-05-20T14:42:50.000Z to 2025-05-20T18:32:32.000Z
+2025-05-20 21:00:59 [[32minfo[39m]: Analyzed 1000 ticks for R_10. Avg tick processing time: 49.261ms, Min: 0.002ms, Max: 1848.417ms
+2025-05-20 21:01:41 [[32minfo[39m]: Analyzed 1000 ticks for R_100. Avg tick processing time: 53.922ms, Min: 0.001ms, Max: 2210.233ms
+2025-05-20 21:01:52 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 21:01:52 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 21:01:53 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:01:54 [[32minfo[39m]: Analyzed 1000 ticks for R_25. Avg tick processing time: 42.792ms, Min: 0.001ms, Max: 1978.152ms
+2025-05-20 21:01:54 [[32minfo[39m]: Analyzed 2000 ticks for R_10. Avg tick processing time: 52.085ms, Min: 0.001ms, Max: 1848.417ms
+2025-05-20 21:02:52 [[32minfo[39m]: Analyzed 2000 ticks for R_100. Avg tick processing time: 62.277ms, Min: 0.001ms, Max: 2210.233ms
+2025-05-20 21:03:03 [[32minfo[39m]: Analyzed 2000 ticks for R_25. Avg tick processing time: 56.327ms, Min: 0.001ms, Max: 1978.152ms
+2025-05-20 21:03:09 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:05:32 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:05:37 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 21:05:37 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 21:05:37 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 21:05:37 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 21:05:37 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 21:05:37 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:05:37 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 21:05:37 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:05:37 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 21:05:37 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:05:37 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 21:05:37 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 21:05:37 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 21:05:37 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:05:39 [[32minfo[39m]: Trading engine initialized
+2025-05-20 21:05:47 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 21:06:01 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 21:06:10 [[32minfo[39m]: Found 29987108 ticks for R_25
+2025-05-20 21:06:27 [[32minfo[39m]: Data range: 2024-07-18T22:37:32.000Z to 2025-05-19T14:26:16.000Z
+2025-05-20 21:07:06 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 21:07:19 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 21:07:19 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 21:07:19 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:07:36 [[32minfo[39m]: Data range: 2024-05-20T14:42:50.000Z to 2025-05-20T18:32:32.000Z
+2025-05-20 21:08:14 [[32minfo[39m]: Analyzed 1000 ticks for R_10. Avg core analysis time: 0.004ms, Min: 0.001ms, Max: 0.112ms, Avg DB operation time: 52.032ms
+2025-05-20 21:08:52 [[32minfo[39m]: Analyzed 1000 ticks for R_100. Avg core analysis time: 0.002ms, Min: 0.000ms, Max: 0.019ms, Avg DB operation time: 53.402ms
+2025-05-20 21:08:57 [[32minfo[39m]: Analyzed 1000 ticks for R_25. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.022ms, Avg DB operation time: 41.118ms
+2025-05-20 21:08:59 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 21:08:59 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 21:09:00 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:09:12 [[32minfo[39m]: Analyzed 2000 ticks for R_10. Avg core analysis time: 0.003ms, Min: 0.001ms, Max: 0.112ms, Avg DB operation time: 54.786ms
+2025-05-20 21:10:02 [[32minfo[39m]: Analyzed 2000 ticks for R_100. Avg core analysis time: 0.001ms, Min: 0.000ms, Max: 0.019ms, Avg DB operation time: 61.934ms
+2025-05-20 21:10:04 [[32minfo[39m]: Analyzed 2000 ticks for R_25. Avg core analysis time: 0.001ms, Min: 0.000ms, Max: 0.022ms, Avg DB operation time: 54.171ms
+2025-05-20 21:10:35 [[32minfo[39m]: Analyzed 3000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.000ms, Max: 0.112ms, Avg DB operation time: 64.271ms
+2025-05-20 21:10:40 [[33mwarn[39m]: WebSocket disconnected
+2025-05-20 21:10:40 [[32minfo[39m]: Reconnection attempt 1
+2025-05-20 21:10:41 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:11:07 [[32minfo[39m]: Analyzed 3000 ticks for R_100. Avg core analysis time: 0.001ms, Min: 0.000ms, Max: 0.022ms, Avg DB operation time: 62.865ms
+2025-05-20 21:11:11 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:17:31 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:17:59 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:18:02 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:18:34 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:18:46 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:18:51 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 21:18:51 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 21:18:51 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 21:18:51 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 21:18:51 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 21:18:51 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:18:51 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 21:18:51 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:18:51 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 21:18:51 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:18:51 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 21:18:51 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 21:18:51 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 21:18:52 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:18:53 [[32minfo[39m]: Trading engine initialized
+2025-05-20 21:19:08 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 21:19:09 [[32minfo[39m]: Data range: 2024-07-18T22:37:32.000Z to 2025-05-19T14:26:16.000Z
+2025-05-20 21:19:22 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 21:19:27 [[32minfo[39m]: Found 29987108 ticks for R_25
+2025-05-20 21:19:28 [[32minfo[39m]: Data range: 2024-05-20T14:42:50.000Z to 2025-05-20T18:32:32.000Z
+2025-05-20 21:19:44 [[32minfo[39m]: Data range: 2024-07-08T22:11:44.000Z to 2025-05-20T02:47:18.000Z
+2025-05-20 21:20:08 [[32minfo[39m]: Analyzed 1000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.023ms, Avg DB operation time: 52.314ms
+2025-05-20 21:20:13 [[32minfo[39m]: Analyzed 1000 ticks for R_25. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.020ms, Avg DB operation time: 40.493ms
+2025-05-20 21:20:16 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:35:02 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:35:06 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 21:35:06 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 21:35:06 [[32minfo[39m]: Starting batch processing with concurrency 3 for 5 symbols
+2025-05-20 21:35:06 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 21:35:06 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 21:35:06 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:35:06 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 21:35:06 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:35:06 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 21:35:06 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:35:06 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 21:35:06 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 21:35:06 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 21:35:07 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:35:08 [[32minfo[39m]: Trading engine initialized
+2025-05-20 21:35:20 [[32minfo[39m]: Found 13160000 ticks for R_10
+2025-05-20 21:35:21 [[32minfo[39m]: Data range: 2024-07-18T22:37:32.000Z to 2025-05-19T14:26:16.000Z
+2025-05-20 21:35:25 [[32minfo[39m]: Found 21110000 ticks for R_100
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 1000 ticks for R_10. Avg core analysis time: 0.004ms, Min: 0.002ms, Max: 0.087ms, Avg DB operation time: 0.006ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 2000 ticks for R_10. Avg core analysis time: 0.003ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.005ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 3000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.004ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 4000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.003ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 5000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.003ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 6000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 7000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 8000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 9000 ticks for R_10. Avg core analysis time: 0.002ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:26 [[32minfo[39m]: Analyzed 10000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 11000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 12000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 13000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 14000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 0.090ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 15000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 16000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 17000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.002ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 18000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.001ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 19000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.001ms
+2025-05-20 21:35:31 [[32minfo[39m]: Analyzed 20000 ticks for R_10. Avg core analysis time: 0.001ms, Min: 0.001ms, Max: 2.939ms, Avg DB operation time: 0.001ms
+2025-05-20 21:35:32 [[32minfo[39m]: Found 29987108 ticks for R_25
+2025-05-20 21:35:33 [[32minfo[39m]: Data range: 2024-05-20T14:42:50.000Z to 2025-05-20T18:32:32.000Z
+2025-05-20 21:35:34 [[32minfo[39m]: Shutting down gracefully...

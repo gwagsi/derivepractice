@@ -89,7 +89,7 @@ class HistoricalDataEngine {
     this.MAX_RETRIES = 3;
     this.BATCH_SIZE = 5000; // Max allowed by API
     this.MIN_DELAY = 100; // Minimum delay between requests (ms)
-    this.MAX_DELAY = 1000; // Maximum delay cap (ms)
+    this.MAX_DELAY = 250; // Maximum delay cap (ms)
     this.api = null;
     this.metrics = {
       requests: 0,
@@ -98,7 +98,7 @@ class HistoricalDataEngine {
     };
 
     // Create a rate limiter for general requests (220/min, 14400/hour)
-    this.rateLimiter = new RateLimiter(75, 3500); // Set slightly below limits to be safe
+    this.rateLimiter = new RateLimiter(210, 13200); // Set slightly below limits to be safe
 
     this.symbolConcurrency = 2; // Reduced from 3 to avoid rate limit issues
     this.currentBatchSize = this.BATCH_SIZE;

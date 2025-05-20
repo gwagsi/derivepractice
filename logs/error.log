@@ -1412,3 +1412,4 @@
 2025-05-19 13:28:04 [[31merror[39m]: Attempt 2 failed for R_75: undefined
 2025-05-19 13:28:06 [[31merror[39m]: Attempt 2 failed for 1HZ10V: undefined
 2025-05-19 13:39:36 [[31merror[39m]: WebSocket error: 
+2025-05-20 20:32:42 [[31merror[39m]: WebSocket error: WebSocket was closed before the connection was established
