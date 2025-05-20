@@ -5029,3 +5029,40 @@
 2025-05-20 21:35:32 [[32minfo[39m]: Found 29987108 ticks for R_25
 2025-05-20 21:35:33 [[32minfo[39m]: Data range: 2024-05-20T14:42:50.000Z to 2025-05-20T18:32:32.000Z
 2025-05-20 21:35:34 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:44:29 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:44:31 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:44:48 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:44:52 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 21:44:52 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 21:44:53 [[32minfo[39m]: Starting batch processing with concurrency 3 for 6 symbols
+2025-05-20 21:44:53 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 21:44:53 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 21:44:53 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:44:53 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 21:44:53 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:44:53 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 21:44:53 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:44:53 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 21:44:53 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 21:44:53 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 21:44:53 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:44:53 [[32minfo[39m]: Starting background historical data fetch
+2025-05-20 21:44:53 [[31merror[39m]: Background processing failed: pLimit is not a function
+2025-05-20 21:44:53 [[32minfo[39m]: Shutting down gracefully...
+2025-05-20 21:46:46 [[32minfo[39m]: Server running on port 3000
+2025-05-20 21:46:50 [[32minfo[39m]: Connected to MongoDB database: derivfinal32
+2025-05-20 21:46:50 [[32minfo[39m]: Connected to MongoDB
+2025-05-20 21:46:50 [[32minfo[39m]: Starting batch processing with concurrency 3 for 6 symbols
+2025-05-20 21:46:50 [[32minfo[39m]: Processing batch #1 with 3 symbols
+2025-05-20 21:46:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_10
+2025-05-20 21:46:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:46:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_25
+2025-05-20 21:46:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:46:50 [[32minfo[39m]: Initializing analysis engine for symbol: R_100
+2025-05-20 21:46:50 [[32minfo[39m]: Analysis engine initialized
+2025-05-20 21:46:50 [[32minfo[39m]: Starting analysis for symbol: R_10
+2025-05-20 21:46:50 [[32minfo[39m]: Starting analysis for symbol: R_25
+2025-05-20 21:46:50 [[32minfo[39m]: Starting analysis for symbol: R_100
+2025-05-20 21:46:51 [[32minfo[39m]: WebSocket connected
+2025-05-20 21:46:51 [[32minfo[39m]: Starting background historical data fetch
+2025-05-20 21:46:51 [[32minfo[39m]: Shutting down gracefully...

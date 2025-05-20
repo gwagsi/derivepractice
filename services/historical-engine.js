@@ -5,7 +5,7 @@ const { getCollection } = require("../utils/db");
 const constants = require("../config/constants");
 
 // Fix: Import pLimit correctly
-const pLimit = require("p-limit").default;
+const pLimit = require("p-limit");
 
 // Add a RateLimiter class to manage API requests
 class RateLimiter {
