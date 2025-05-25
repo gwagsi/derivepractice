@@ -55,7 +55,7 @@ async function processBatchesWithConcurrency(symbols, concurrency = 3) {
   logger.info(`Completed processing all ${total} symbols`);
 }
 
-const server = app.listen(PORT, async () => {
+const server = app.listen(PORT, "0.0.0.0", async () => {
   logger.info(`Server running on port ${PORT}`);
   try {
     await connect();

@@ -21,6 +21,8 @@ app.use(
       process.env.FRONTEND_URL || "http://localhost:3000",
       "http://localhost:5173", // Add your Vite dev server
       "http://localhost:3001", // Common alternative port
+      // ACCEPT ALL ORIGINS
+      "*",
     ],
     credentials: true,
   })
