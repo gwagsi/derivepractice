@@ -1,0 +1,36 @@
+{
+  "name": "ml_trading_bot",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwagsi/derivepractice.git"
+  },
+  "author": "gwagsi glenn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwagsi/derivepractice/issues"
+  },
+  "homepage": "https://github.com/gwagsi/derivepractice#readme",
+  "description": "",
+  "dependencies": {
+    "@deriv/deriv-api": "^1.0.15",
+    "compression": "^1.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongodb": "^6.16.0",
+    "p-limit": "^3.1.0",
+    "winston": "^3.17.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
