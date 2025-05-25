@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Search, Filter, TrendingUp, Database, Loader2, AlertCircle, Maximize, Minimize } from 'lucide-react';
 
-const API_BASE_URL = 'http://47.84.49.111:3000';
+const API_BASE_URL = 'https://deriv.wahnkap.com';
 const AVAILABLE_SYMBOLS = ["1HZ10V", "1HZ75V", "R_50", "R_75", "R_10", "R_25", "R_100", "1HZ50V", "1HZ100V", "1HZ25V"];
 const RISK_LEVELS = [1, 2, 3, 4, 5];
 
