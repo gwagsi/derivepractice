@@ -22,7 +22,7 @@ app.use(
       "http://localhost:5173", // Add your Vite dev server
       "http://localhost:3001", // Common alternative port
       // ACCEPT ALL ORIGINS
-      "*",
+      "https://derivepractice-1.onrender.com",
     ],
     credentials: true,
   })
